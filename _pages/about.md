@@ -16,14 +16,6 @@ profile:
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
-Hi! I'm [Your Name], and if there's one thing I trust, it's data.
-
-In a non-deterministic world, my curiosity has led me to a passion for the secrets data conceals. With a solid foundation in mathematical and analytical rigor, I've found in data science the precise methodologies for every insight to not only inform, but also drive strategic decisions. Ultimately, data holds the answer; it's just a matter of asking the right question.
-
-Through advanced tools and models, I bring a tempered and strategic perspective, forged by a career that has given me a deep understanding of how the most complex theory tackles the most demanding challenges. My focus now is to contribute to problem-solving, with the clarity that only experience can offer.
-
-I invite you to explore my projects, where you'll see how that trust in data translates into tangible results. If you're looking for an approach that is professional, practical, and friendly, feel free to contact me. Let's unlock the hidden potential of your data!
-
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
