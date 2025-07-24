@@ -2,11 +2,13 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert E
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Arthur Clerjon
+    - name: Position
+      value: Permanent Researcher, CEA
+    - name: Location
+      value: Grenoble, France
     - name: Languages
-      value: English, German
+      value: French (mother tongue), English (fluent), Spanish (reading and speaking).
 
 - title: Education
   type: time_table
