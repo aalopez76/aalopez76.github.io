@@ -65,10 +65,9 @@
       icon: fas fa-certificate
       items:
         - name: Kaggle
-          time: 2022-12-30
-
+          
     - category: '<a href="https://www.credential.net/cacbbd33-9600-4b18-9c9d-771ef11a6b4e#acc.dkj4lxEN" target="_blank">Senior Data Scientist Certification</a>' 
       icon: fas fa-award
       items:
         - name: ITESM
-          time: 2025-02-28
+          
