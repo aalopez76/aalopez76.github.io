@@ -5,9 +5,9 @@
       value: Arturo Abraham López Pérez
     - name: Label
       value: Data Scientist
-    - name: email 
+    - name: email
       value: aalpzp@gmail.com
-    - name: Url  
+    - name: Url
       value: https://aalopez76.github.io
     - name: Languages
       value: Spanish (mother tongue), English (reading and speaking).
@@ -21,7 +21,7 @@
       description:
         - Application of technological and mathematical tools in the development of intelligent models, including their implementation on web platforms.
         - Implementation of high-impact innovations in the field of Data Science through applied projects and methodologies.
-    - title: Applied Data Science  (MSc specialization )
+    - title: Applied Data Science (MSc specialization )
       institution: Institute of Executive Education and Technology (IEXE)
       year: 2021-2023
       description:
@@ -30,8 +30,8 @@
     - title: BSc & MSc in Mathematics
       institution: Universidad de Puebla (BUAP)
       year: 2008
-  
-- title: Experience
+
+- title: Experience # Esta es una sección principal
   type: time_table
   contents:
     - title: Digitalization & Data Governance
@@ -48,29 +48,27 @@
         - Taught undergraduate and graduate-level courses in Applied Mathematics, Statistics, and Introduction to Data Science.
         - Designed and delivered hands-on sessions covering mathematical modeling, programming in Python, and statistical inference.
 
-    - title: Technical Skills
-      type: list
-      contents:
-        - SQL / MongoDB 
-        - Python / R 
-        - Scikit-learn / TensorFlow / keras
-        - Git / GitHub 
-        - Dockers / AWS 
-        - CNN / RNN / GM / DQNN 
+# ---- Aquí comienzan las secciones que estaban mal anidadas ----
 
-    - title: Certifications
-      type: list_groups          
-      contents:
-        - title: Kaggle Certifications # Título del certificado
-        institution: Kaggle # Institución que lo otorga
-        year: 2022-12-30 # Fecha o año. Puedes usar 'date' en lugar de 'year' si prefieres.
-        url: https://www.kaggle.com/learn # description: Esto es una descripción opcional del certificado.
+- title: Technical Skills # Esta es una nueva sección principal
+  type: list # O usa 'nested_list' si quieres categorías más detalladas
+  contents:
+    - SQL / MongoDB
+    - Python / R
+    - Scikit-learn / TensorFlow / keras
+    - Git / GitHub
+    - Dockers / AWS
+    - CNN / RNN / GM / DQNN
 
-        - title: Senior Data Scientist
-        institution: Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)
-        year: 2025-02-28
-        url: https://www.credential.net/cacbbd33-9600-4b18-9c9d-771ef11a6b4e#acc.dkj4lxEN
+- title: Certifications # Esta es otra nueva sección principal
+  type: list_groups # Para el formato de dos columnas
+  contents:
+    - title: Kaggle Certifications
+      institution: Kaggle
+      year: 2022-12-30
+      url: https://www.kaggle.com/learn # El comentario '# description: ...' no debería estar en la misma línea que un valor, pero como está comentado no afecta a la sintaxis.
 
-
- 
-      
+    - title: Senior Data Scientist
+      institution: Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)
+      year: 2025-02-28
+      url: https://www.credential.net/cacbbd33-9600-4b18-9c9d-771ef11a6b4e#acc.dkj4lxEN
