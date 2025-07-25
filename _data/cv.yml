@@ -58,28 +58,26 @@
     - Dockers / AWS
     - CNN / RNN / GM / DQNN
 
-- title: Certifications # Este es el título que aparecerá en la barra lateral y como encabezado
-  type: list_groups # ¡Este es el type correcto para las dos columnas!
+- title: Certifications # Título de la sección principal
+  type: list_groups # Este es el type correcto para el diseño de dos columnas
   contents:
-    # Primer certificado/grupo de certificación
-    - title: Kaggle Certifications # Este es el título que aparecerá arriba del contenido
-      icon: fas fa-certificate # Puedes intentar añadir un ícono si el tema lo procesa en este nivel
-      items:  # Aquí va la lista de los certificados individuales
-        - | # Usamos '|' para indicar que el contenido es un bloque de texto multi-línea (HTML)
-          <p class="mb-0">
-            <i class="fas fa-check-circle"></i> <strong>Kaggle Learn Courses</strong><br>
-            <i class="fas fa-university"></i> Kaggle <br>
-            <i class="fas fa-calendar-alt"></i> 2022-12-30 <br>
-            <a href="https://www.kaggle.com/learn" target="_blank"><i class="fas fa-external-link-alt"></i> View Certificate</a>
-          </p>
-          
+    # Primer certificado (Grupo de certificaciones Kaggle)
+    - category: Kaggle Certifications # ¡Cambiado de 'title' a 'category'!
+      icon: fas fa-certificate # Icono para la categoría principal (ej. un diploma)
+      items: # Aquí va la lista de ítems dentro de esta categoría/tarjeta
+        - name: Kaggle Learn Courses # Corresponde a item.name
+          school: Kaggle # Corresponde a item.school (aquí la institución)
+          time: 2022-12-30 # Corresponde a item.time (la fecha)
+          link: https://www.kaggle.com/learn # Corresponde a item.link
+          linkname: View Course # Corresponde a item.linkname (texto del botón)
+          # Puedes añadir 'level' si aplica a este certificado: level: "Intermediate"
 
-    # Segundo certificado/grupo de certificación
-    - title: Senior Data Scientist Certification # Otro título principal
-      icon: fas fa-award # Otro ícono
+    # Segundo certificado (Senior Data Scientist)
+    - category: Senior Data Scientist Certification # ¡Cambiado de 'title' a 'category'!
+      icon: fas fa-award # Icono para la categoría principal (ej. una medalla)
       items:
-        - title: Senior Data Scientist # Título del certificado
-          institution: Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM) # Institución
-          year: 2025-02-28 # Fecha
-         
-      
+        - name: Senior Data Scientist # Corresponde a item.name
+          school: Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM) # Corresponde a item.school
+          time: 2025-02-28 # Corresponde a item.time
+          link: https://www.credential.net/cacbbd33-9600-4b18-9c9d-771ef11a6b4e#acc.dkj4lxEN # Corresponde a item.link
+          linkname: View Credential # Corresponde a item.linkname
