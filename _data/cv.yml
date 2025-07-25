@@ -58,14 +58,25 @@
     - Dockers / AWS
     - CNN / RNN / GM / DQNN
 
-- title: Certifications 
-  type: time_table 
+- title: Certifications # Este es el título que aparecerá en la barra lateral y como encabezado
+  type: list_groups # ¡Este es el type correcto para las dos columnas!
   contents:
-    - title: Kaggle Certifications
-      institution: Kaggle
-      year: 2022-12-30     
+    # Primer certificado/grupo de certificación
+    - title: Kaggle Certifications # Este es el título que aparecerá arriba del contenido
+      icon: fas fa-certificate # Puedes intentar añadir un ícono si el tema lo procesa en este nivel
+      items: # ¡Aquí está la lista de ítems que la plantilla espera!
+        - title: Kaggle Learn Courses # Título del curso
+          institution: Kaggle # Institución
+          year: 2022-12-30 # Fecha
+          url: https://www.kaggle.com/learn # URL para el enlace
+          # Puedes añadir description aquí si quieres
 
-    - title: Senior Data Scientist
-      institution: Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)
-      year: 2025-02-28
+    # Segundo certificado/grupo de certificación
+    - title: Senior Data Scientist Certification # Otro título principal
+      icon: fas fa-award # Otro ícono
+      items:
+        - title: Senior Data Scientist # Título del certificado
+          institution: Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM) # Institución
+          year: 2025-02-28 # Fecha
+          url: https://www.credential.net/cacbbd33-9600-4b18-9c9d-771ef11a6b4e#acc.dkj4lxEN
       
