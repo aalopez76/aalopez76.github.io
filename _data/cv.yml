@@ -58,26 +58,17 @@
     - Dockers / AWS
     - CNN / RNN / GM / DQNN
 
-- title: Certifications # Título de la sección principal
-  type: list_groups # Este es el type correcto para el diseño de dos columnas
+- title: Certifications 
+  type: list_groups 
   contents:
-    # Primer certificado (Kaggle)
-    - category: Kaggle Certifications
+    - category: '<a href="https://www.kaggle.com/learn" target="_blank">Kaggle Certifications</a>'
       icon: fas fa-certificate
       items:
-        - name: '<a href="https://www.kaggle.com/learn" target="_blank">Kaggle Learn Courses</a>' # El nombre ahora es un enlace
-          school: Kaggle
+        - name: Kaggle
           time: 2022-12-30
-          # link: # Eliminar o comentar esta línea
-          # linkname: # Eliminar o comentar esta línea
 
-    # Segundo certificado (Senior Data Scientist)
-    - category: Senior Data Scientist Certification
+    - category: '<a href="https://www.credential.net/cacbbd33-9600-4b18-9c9d-771ef11a6b4e#acc.dkj4lxEN" target="_blank">Senior Data Scientist Certification</a>' 
       icon: fas fa-award
       items:
-        - name: '<a href="https://www.credential.net/cacbbd33-9600-4b18-9c9d-771ef11a6b4e#acc.dkj4lxEN" target="_blank">Senior Data Scientist</a>' # El nombre ahora es un enlace
-          school: Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)
+        - name: ITESM
           time: 2025-02-28
-          # link: # Eliminar o comentar esta línea
-          # linkname: # Eliminar o comentar esta línea
-
