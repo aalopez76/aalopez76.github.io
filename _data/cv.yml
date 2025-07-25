@@ -59,7 +59,7 @@
     - CNN / RNN / GM / DQNN
 
 - title: Certifications 
-  type: list_groups 
+  type: list 
   contents:
     - title: Kaggle Certifications
       institution: Kaggle
