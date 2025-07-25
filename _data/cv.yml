@@ -45,5 +45,47 @@
       description:
         - Taught undergraduate and graduate-level courses in Applied Mathematics, Statistics, and Introduction to Data Science.
         - Designed and delivered hands-on sessions covering mathematical modeling, programming in Python, and statistical inference.
-           
+
+    - title: Technical Skills
+      type: list
+      contents:
+        - SQL / MongoDB 
+        - Python / R 
+        - Scikit-learn / TensorFlow / keras
+        - Git / GitHub 
+        - Dockers / AWS 
+        - CNN / RNN / GM / DQNN 
+
+    - title: Certifications
+      type: list_groups          
+      contents:
+        - title: Quantum Teleportation # Título del certificado
+        institution: Stanford University # Institución que lo otorga
+        year: 2018-01-01 # Fecha o año. Puedes usar 'date' en lugar de 'year' si prefieres.
+        url: # description: Esto es una descripción opcional del certificado.
+
+        - title: Quantum Communication
+        institution: Stanford University
+        year: 2018-01-01
+
+        - title: Quantum Cryptography
+        institution: Stanford University
+        year: 2018-01-01
+
+    - title: Quantum Information
+      institution: Stanford University
+      year: 2018-01-01
+
+    - title: Quantum Computing
+      institution: Stanford University
+      year: 2018-01-01
+
+    - title: Machine Learning
+      institution: Stanford University
+      year: 2018-01-01
+      # Puedes añadir más campos si la plantilla list.liquid los soporta,
+      # o si quieres personalizarlos más adelante.
+      # Por ejemplo, para el ícono:
+      # icon: fas fa-check-circle # Esto dependerá de si la plantilla lo procesa
+ 
       
