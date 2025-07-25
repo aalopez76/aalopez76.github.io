@@ -6,8 +6,7 @@
     - name: Label
       value: Data Scientist
     - email: aalpzp@gmail.com
-    - 
-    
+    - url: https://aalopez76.github.io    
     - name: Languages
       value: Spanish (mother tongue), English (reading and speaking).
 
@@ -28,12 +27,13 @@
         - Knowledge of analytical methodologies and technological tools to transform data into key strategic assets.
     - title: BSc & MSc in Mathematics
       institution: Universidad de Puebla (BUAP)
+      year: 2008
   
 - title: Experience
   type: time_table
   contents:
     - title: Digitalization & Data Governance
-      institution: La Ferme
+      institution: La Ferme (Dairy Processing Facility)
       year: 2025 -
       description:
         - Currently designing and implementing the digital transformation of operational, commercial, and quality-related data for its integration into relational databases and analytical workflows.
