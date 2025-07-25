@@ -61,23 +61,23 @@
 - title: Certifications # Título de la sección principal
   type: list_groups # Este es el type correcto para el diseño de dos columnas
   contents:
-    # Primer certificado (Grupo de certificaciones Kaggle)
-    - category: Kaggle Certifications # ¡Cambiado de 'title' a 'category'!
-      icon: fas fa-certificate # Icono para la categoría principal (ej. un diploma)
-      items: # Aquí va la lista de ítems dentro de esta categoría/tarjeta
-        - name: Kaggle Learn Courses # Corresponde a item.name
-          school: Kaggle # Corresponde a item.school (aquí la institución)
-          time: 2022-12-30 # Corresponde a item.time (la fecha)
-          link: https://www.kaggle.com/learn # Corresponde a item.link
-          linkname: View Course # Corresponde a item.linkname (texto del botón)
-          # Puedes añadir 'level' si aplica a este certificado: level: "Intermediate"
+    # Primer certificado (Kaggle)
+    - category: Kaggle Certifications
+      icon: fas fa-certificate
+      items:
+        - name: '<a href="https://www.kaggle.com/learn" target="_blank">Kaggle Learn Courses</a>' # El nombre ahora es un enlace
+          school: Kaggle
+          time: 2022-12-30
+          # link: # Eliminar o comentar esta línea
+          # linkname: # Eliminar o comentar esta línea
 
     # Segundo certificado (Senior Data Scientist)
-    - category: Senior Data Scientist Certification # ¡Cambiado de 'title' a 'category'!
-      icon: fas fa-award # Icono para la categoría principal (ej. una medalla)
+    - category: Senior Data Scientist Certification
+      icon: fas fa-award
       items:
-        - name: Senior Data Scientist # Corresponde a item.name
-          school: Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM) # Corresponde a item.school
-          time: 2025-02-28 # Corresponde a item.time
-          link: https://www.credential.net/cacbbd33-9600-4b18-9c9d-771ef11a6b4e#acc.dkj4lxEN # Corresponde a item.link
-          linkname: View Credential # Corresponde a item.linkname
+        - name: '<a href="https://www.credential.net/cacbbd33-9600-4b18-9c9d-771ef11a6b4e#acc.dkj4lxEN" target="_blank">Senior Data Scientist</a>' # El nombre ahora es un enlace
+          school: Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)
+          time: 2025-02-28
+          # link: # Eliminar o comentar esta línea
+          # linkname: # Eliminar o comentar esta línea
+
