@@ -59,12 +59,11 @@
     - CNN / RNN / GM / DQNN
 
 - title: Certifications 
-  type: list 
+  type: time_table 
   contents:
     - title: Kaggle Certifications
       institution: Kaggle
-      year: 2022-12-30
-     
+      year: 2022-12-30     
 
     - title: Senior Data Scientist
       institution: Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)
