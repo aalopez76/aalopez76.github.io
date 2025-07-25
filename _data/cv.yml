@@ -5,8 +5,10 @@
       value: Arturo Abraham López Pérez
     - name: Label
       value: Data Scientist
-    - email: aalpzp@gmail.com
-    - url: https://aalopez76.github.io    
+    - name: email 
+      value: aalpzp@gmail.com
+    - name: Url  
+      value: https://aalopez76.github.io
     - name: Languages
       value: Spanish (mother tongue), English (reading and speaking).
 
@@ -59,33 +61,16 @@
     - title: Certifications
       type: list_groups          
       contents:
-        - title: Quantum Teleportation # Título del certificado
-        institution: Stanford University # Institución que lo otorga
-        year: 2018-01-01 # Fecha o año. Puedes usar 'date' en lugar de 'year' si prefieres.
-        url: # description: Esto es una descripción opcional del certificado.
+        - title: Kaggle Certifications # Título del certificado
+        institution: Kaggle # Institución que lo otorga
+        year: 2022-12-30 # Fecha o año. Puedes usar 'date' en lugar de 'year' si prefieres.
+        url: https://www.kaggle.com/learn # description: Esto es una descripción opcional del certificado.
 
-        - title: Quantum Communication
-        institution: Stanford University
-        year: 2018-01-01
+        - title: Senior Data Scientist
+        institution: Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)
+        year: 2025-02-28
+        url: https://www.credential.net/cacbbd33-9600-4b18-9c9d-771ef11a6b4e#acc.dkj4lxEN
 
-        - title: Quantum Cryptography
-        institution: Stanford University
-        year: 2018-01-01
 
-    - title: Quantum Information
-      institution: Stanford University
-      year: 2018-01-01
-
-    - title: Quantum Computing
-      institution: Stanford University
-      year: 2018-01-01
-
-    - title: Machine Learning
-      institution: Stanford University
-      year: 2018-01-01
-      # Puedes añadir más campos si la plantilla list.liquid los soporta,
-      # o si quieres personalizarlos más adelante.
-      # Por ejemplo, para el ícono:
-      # icon: fas fa-check-circle # Esto dependerá de si la plantilla lo procesa
  
       
