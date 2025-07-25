@@ -48,8 +48,6 @@
         - Taught undergraduate and graduate-level courses in Applied Mathematics, Statistics, and Introduction to Data Science.
         - Designed and delivered hands-on sessions covering mathematical modeling, programming in Python, and statistical inference.
 
-# ---- Aquí comienzan las secciones que estaban mal anidadas ----
-
 - title: Technical Skills # Esta es una nueva sección principal
   type: list # O usa 'nested_list' si quieres categorías más detalladas
   contents:
@@ -60,15 +58,15 @@
     - Dockers / AWS
     - CNN / RNN / GM / DQNN
 
-- title: Certifications # Esta es otra nueva sección principal
-  type: list_groups # Para el formato de dos columnas
+- title: Certifications 
+  type: list_groups 
   contents:
     - title: Kaggle Certifications
       institution: Kaggle
       year: 2022-12-30
-      url: https://www.kaggle.com/learn # El comentario '# description: ...' no debería estar en la misma línea que un valor, pero como está comentado no afecta a la sintaxis.
+     
 
     - title: Senior Data Scientist
       institution: Instituto Tecnológico y de Estudios Superiores de Monterrey (ITESM)
       year: 2025-02-28
-      url: https://www.credential.net/cacbbd33-9600-4b18-9c9d-771ef11a6b4e#acc.dkj4lxEN
+      
