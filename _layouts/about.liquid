@@ -2,54 +2,131 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
-    
-  </header>
+  {% if page.profile.align != 'center' -%}
+    <header class="post-header">
+      <h1 class="post-title">
+        {% if site.title == 'blank' %}
+          <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+          {{ site.last_name }}
+          {{ site.suffix }}
+        {% else %}
+          {{ site.title }}
+        {% endif %}
+      </h1>
+      <p class="desc">{{ page.subtitle }}</p>
+    </header>
+  {% endif %}
 
   <article>
     {% if page.profile %}
-      <div class="profile 
-        {% if page.profile.align == 'left' %}float-left{% endif %}
-        {% if page.profile.align == 'right' %}float-right{% endif %}
-        {% if page.profile.align == 'center' %}text-center mx-auto{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle mx-auto' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded mx-auto' %}
+      {% if page.profile.align == 'center' -%}
+        <div class="profile center justify-content-center">
+          {%- if page.profile.image %}
+            {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+
+            {% if page.profile.image_circular %}
+              {%- assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' -%}
+            {% else %}
+              {%- assign profile_image_class = 'img-fluid z-depth-1 rounded' -%}
+            {% endif %}
+
+            {%
+              include figure.liquid
+              path=profile_image_path
+              class=profile_image_class
+              alt=page.profile.image
+              loading="eager" {# Añadido loading para consistencia, asumiendo que es una buena práctica #}
+              sizes="(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw" {# Añadido sizes #}
+              cache_bust=true {# Añadido cache_bust #}
+            -%}
+          {% endif -%}
+
+          <div class="header profile-header"> {# Añadida clase 'profile-header' para estilos específicos si es necesario #}
+            <h2 class="profile-name"> {# Cambiado a h2 y eliminada la clase 'font-weight-bold' si se manejará en CSS #}
+              {% if site.title == 'blank' -%}
+                <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+                {{ site.last_name }}
+                {{ site.suffix }}
+              {%- else -%}
+                {{ site.title }}
+              {%- endif %}
+            </h2>
+
+            {%- if page.profile.tagline %} {# NUEVO: Frase/Tagline #}
+              <p class="tagline">{{ page.profile.tagline }}</p>
+            {%- endif %}
+
+            {%- if page.profile.address %} {# Reinterpretamos 'address' como 'email' o 'contacto' si así lo deseas #}
+              <div class="address"> {# Puedes renombrar esta clase o su contenido si es un email #}
+                {{ page.profile.address }}
+              </div>
+            {%- endif %}
+
+            {# Contenido de 'more_info' si quieres que aparezca ANTES de las redes sociales #}
+            {% if page.profile.more_info %}
+              <div class="more-info">
+                {{ page.profile.more_info }}
+              </div>
+            {% endif %}
+
+            <div class="social text-center"> {# Añadido text-center para los iconos #}
+              <div class="contact-icons">
+                {% include social.liquid %}
+              </div>
+              <div class="contact-note">
+                {{ site.contact_note }}
+              </div>
+            </div>
+          </div> {# Fin .profile-header #}
+        </div> {# Fin .profile .center #}
+      {% else -%}
+        {# ESTE BLOQUE ES PARA FLOAT-LEFT/RIGHT, ASEGÚRATE DE QUE TAMBIÉN REFLEJE LOS CAMBIOS SI LO USAS #}
+        {# Por ahora, asumimos que prefieres el centrado. #}
+        <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+          {% if page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% if page.profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% else %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+            {% endif %}
+            {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
+            30vw, 95vw"{% endcapture %}
+            {%
+              include figure.liquid path = profile_image_path class = profile_image_class sizes = sizes alt = page.profile.image
+              cache_bust = true loading="eager"
+            %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-
-        <h2 class="profile-name text-center mt-3">
-          {% if site.title == 'blank' %}
-            <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-            {{ site.last_name }}
-          {% else %}
-            {{ site.title }}
+          {# Agrega el nombre, tagline, email y social aquí también si este bloque se usa #}
+          <h2 class="profile-name">
+            {% if site.title == 'blank' %}
+              <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+              {{ site.last_name }}
+              {{ site.suffix }}
+            {% else %}
+              {{ site.title }}
+            {% endif %}
+          </h2>
+          {% if page.profile.tagline %}
+            <p class="tagline">{{ page.profile.tagline }}</p>
           {% endif %}
-        </h2>
-        {% if site.email %}
-          <p class="text-center">{{ site.email }}</p>
-        {% endif %}
-
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-
-        {% if page.social %}
-          <div class="social text-center mt-3">
-            <div class="contact-icons">{% include social.liquid %}</div>
-            <div class="contact-note">{{ site.contact_note }}</div>
-          </div>
-        {% endif %}
-      </div>
-    {% endif %}
+          {% if page.profile.address %}
+            <div class="address">
+              {{ page.profile.address }}
+            </div>
+          {% endif %}
+          {% if page.profile.more_info %}
+            <div class="more-info">{{ page.profile.more_info }}</div>
+          {% endif %}
+          {% if page.social %}
+            <div class="social">
+              <div class="contact-icons">{% include social.liquid %}</div>
+              <div class="contact-note">{{ site.contact_note }}</div>
+            </div>
+          {% endif %}
+        </div>
+      {% endif %} {# Fin del if/else de profile.align #}
+    {% endif %} {# Fin del if page.profile #}
 
     <div class="clearfix">{{ content }}</div>
 
@@ -68,10 +145,7 @@ layout: default
     {% endif %}
 
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
+      {% include research.liquid %}
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
