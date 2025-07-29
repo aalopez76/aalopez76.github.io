@@ -67,19 +67,13 @@ body.sticky-bottom-footer {
     color: var(--global-text-color); /* Asegura que el color sea legible */
   }
 
-  .address { /* Si usas 'address' para el email/contacto y quieres estilo */
-    font-size: 0.95em;
-    color: var(--global-text-color-light);
-    margin-bottom: 10px;
-  }
-
   .social {
     /* Estilos para las redes sociales (iconos y nota de contacto) */
     margin-top: 10px; /* Margen superior para separarlo del texto anterior (nombre/frase/more_info) */
-    padding-bottom: 15px; /* Espacio inferior */
+    padding-bottom: 18px; /* Espacio inferior */
 
     .contact-icons {
-      margin-bottom: 5px; /* Espacio entre los íconos y la nota de contacto */
+      margin-bottom: 10px; /* Espacio entre los íconos y la nota de contacto */
       
       a {
         font-size: 1.2rem; /* Cambia este valor para iconos más grandes/pequeños */
@@ -89,7 +83,7 @@ body.sticky-bottom-footer {
         transition: all 0.2s ease; /* Animación suave al hacer hover */
         
         &:hover {
-          opacity: 0.4; /* Ligera transparencia al hover */
+          opacity: 0.7; /* Ligera transparencia al hover */
           transform: scale(1.1); /* Efecto de crecimiento al hover */
         }
       }
