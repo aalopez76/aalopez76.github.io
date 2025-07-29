@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: If there's one thing I trust... it's data!
+# subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: center
