@@ -2,9 +2,6 @@
  * Layout
  ******************************************************************************/
 
-/* _sass/_layout.scss */
-
-// Importaciones (asegúrate de que estas existan o añádelas si son necesarias)
 @import "base";
 @import "distill";
 // @import "pages"; // Comenta o descomenta según si usas un archivo _pages.scss
@@ -48,8 +45,8 @@ body.sticky-bottom-footer {
 
   img {
     /* Estilos para la imagen de perfil (la que es circular) */
-    max-width: 180px; /* Ajusta este valor para controlar el tamaño del círculo (Ej: 150px, 200px) */
-    max-height: 180px; /* Asegura que la altura sea la misma para mantener el círculo si la imagen es circular */
+    max-width: 150px; /* Ajusta este valor para controlar el tamaño del círculo (Ej: 150px, 200px) */
+    max-height: 150px; /* Asegura que la altura sea la misma para mantener el círculo si la imagen es circular */
     object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
     margin-top: 0px; /* No necesitamos margen superior si ya el .profile tiene padding */
     margin-bottom: 10px; /* Margen inferior para separar la imagen del nombre */
@@ -61,7 +58,7 @@ body.sticky-bottom-footer {
 
   .profile-name {
     /* Estilos para el nombre debajo de la imagen */
-    font-size: 1.5em; /* Ajusta este valor para hacer el nombre más pequeño (Ej: 1.3em, 1.6em) */
+    font-size: 1.2em; /* Ajusta este valor para hacer el nombre más pequeño (Ej: 1.3em, 1.6em) */
     margin-top: 5px; /* Ajusta el margen superior del nombre si es necesario */
     margin-bottom: 5px; /* Ajusta el margen inferior del nombre */
     font-weight: bold; /* Hacer el nombre negrita si quieres */
@@ -70,7 +67,7 @@ body.sticky-bottom-footer {
 
   .tagline {
     /* Estilos para la nueva frase (tagline) */
-    font-size: 0.95em; /* Un poco más pequeño que el texto normal, o ajusta a tu gusto */
+    font-size: 0.85em; /* Un poco más pequeño que el texto normal, o ajusta a tu gusto */
     color: var(--global-text-color-light); /* Un color de texto más suave */
     margin-top: 5px; /* Espacio entre el nombre y la frase */
     margin-bottom: 15px; /* Espacio entre la frase y las redes sociales */
@@ -84,7 +81,7 @@ body.sticky-bottom-footer {
   }
 
   .more-info {
-    /* Estilos para la información adicional (tu "Welcome to my personal website!") */
+    /* Estilos para la información adicional */
     font-size: 0.95em;
     color: var(--global-text-color); /* Podría ser global-text-color o global-text-color-light */
     margin-top: 10px; /* Espacio después de tagline o email */
@@ -92,12 +89,23 @@ body.sticky-bottom-footer {
   }
 
   .social {
-    /* Estilos para las redes sociales (iconos y nota de contacto) */
-    margin-top: 20px; /* Margen superior para separarlo del texto anterior (nombre/frase/more_info) */
-    padding-bottom: 20px; /* Espacio inferior */
+  /* Estilos para las redes sociales (iconos y nota de contacto) */
+  margin-top: 20px; /* Margen superior para separarlo del texto anterior (nombre/frase/more_info) */
+  padding-bottom: 20px; /* Espacio inferior */
 
-    .contact-icons {
-      margin-bottom: 10px; /* Espacio entre los íconos y la nota de contacto */
+  .contact-icons {
+    margin-bottom: 10px; /* Espacio entre los íconos y la nota de contacto */
+    
+    a {
+      font-size: 0.95rem; /* Cambia este valor para iconos más grandes/pequeños */
+      margin: 0 10px; /* Espaciado entre iconos */
+      color: var(--global-theme-color); /* Color de los iconos */
+      transition: all 0.2s ease; /* Animación suave al hacer hover */
+      
+      &:hover {
+        color: var(--global-hover-color); /* Color al pasar el mouse */
+        transform: scale(1.1); /* Efecto de crecimiento al hover */
+      }
     }
   }
 }
