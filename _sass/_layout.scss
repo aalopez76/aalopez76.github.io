@@ -49,8 +49,8 @@ body.sticky-bottom-footer {
   
   img {
     /* Estilos para la imagen de perfil (la que es circular) */
-    max-width: 180px; /* Ajusta este valor para controlar el tamaño del círculo (Ej: 150px, 200px) */
-    max-height: 180px; /* Asegura que la altura sea la misma para mantener el círculo si la imagen es circular */
+    max-width: 150px; /* Ajusta este valor para controlar el tamaño del círculo (Ej: 150px, 200px) */
+    max-height: 150px; /* Asegura que la altura sea la misma para mantener el círculo si la imagen es circular */
     object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
     margin: 0 auto 10px auto !important; /* Centra la imagen y añade margen inferior */
     display: block !important; /* Para que margin-left/right: auto funcione */
@@ -60,34 +60,17 @@ body.sticky-bottom-footer {
 
   .profile-name {
     /* Estilos para el nombre debajo de la imagen */
-    font-size: 1.5em; /* Ajusta este valor para hacer el nombre más pequeño (Ej: 1.3em, 1.6em) */
+    font-size: 1.3em; /* Ajusta este valor para hacer el nombre más pequeño (Ej: 1.3em, 1.6em) */
     margin-top: 5px; /* Ajusta el margen superior del nombre si es necesario */
     margin-bottom: 5px; /* Ajusta el margen inferior del nombre */
     font-weight: bold; /* Hacer el nombre negrita si quieres */
     color: var(--global-text-color); /* Asegura que el color sea legible */
   }
 
-  .tagline {
-    /* Estilos para la nueva frase (tagline) */
-    font-size: 0.95em; /* Un poco más pequeño que el texto normal, o ajusta a tu gusto */
-    color: var(--global-text-color-light); /* Un color de texto más suave */
-    margin-top: 5px; /* Espacio entre el nombre y la frase */
-    margin-bottom: 15px; /* Espacio entre la frase y las redes sociales */
-    font-style: italic; /* Opcional: texto en cursiva */
-  }
-
   .address { /* Si usas 'address' para el email/contacto y quieres estilo */
     font-size: 0.95em;
     color: var(--global-text-color-light);
     margin-bottom: 10px;
-  }
-
-  .more-info {
-    /* Estilos para la información adicional (tu "Welcome to my personal website!") */
-    font-size: 0.95em;
-    color: var(--global-text-color); /* Podría ser global-text-color o global-text-color-light */
-    margin-top: 10px; /* Espacio después de tagline o email */
-    margin-bottom: 20px; /* Espacio antes de las redes sociales */
   }
 
   .social {
@@ -99,7 +82,7 @@ body.sticky-bottom-footer {
       margin-bottom: 10px; /* Espacio entre los íconos y la nota de contacto */
       
       a {
-        font-size: 1.5rem; /* Cambia este valor para iconos más grandes/pequeños */
+        font-size: 1.2rem; /* Cambia este valor para iconos más grandes/pequeños */
         margin: 0 10px; /* Espaciado entre iconos */
         color: var(--global-theme-color) !important; /* Mismo color que "about" */
         text-decoration: none; /* Sin subrayado */
