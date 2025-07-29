@@ -37,3 +37,8 @@ $black-color: #000000 !default;
 
 $code-bg-color-light:     rgba($purple-color, 0.05);
 $code-bg-color-dark:      #2c3237 !default;
+
+$theme-color-light:       $blue-color !default;      // Por ejemplo, usa tu $blue-color para el acento claro
+$theme-color-dark:        $cyan-color !default;      // Por ejemplo, usa tu $cyan-color para el acento oscuro
+$theme-bg-color-light:    $white-color !default;     // Color de fondo para el modo claro
+$theme-bg-color-dark:     $grey-color-dark !default; // Color de fondo para el modo oscuro
