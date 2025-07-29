@@ -3,15 +3,13 @@
  * To adjust anything, simply edit the variables below and rebuild the theme.
  ******************************************************************************/
 
-
 // Colors
 $red-color:           #FF3636 !default;
-$red-color-dark:      #990000 !default;
+$red-color-dark:      #B71C1C !default;
 $orange-color:        #F29105 !default;
-$blue-color:          #0d47a1 !default;
-$blue-color-dark:     #00296b !default;
-$sky-blue-color:      #0077b6 !default;
-$cyan-color:          #00b4d8 !default;
+$blue-color:          #0076df !default;
+$blue-color-dark:     #00369f !default;
+$cyan-color:          #2698BA !default;
 $light-cyan-color:    lighten($cyan-color, 25%);
 $green-color:         #00ab37 !default;
 $green-color-lime:    #B7D12A !default;
@@ -32,13 +30,10 @@ $grey-900:            #212529;
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
-
 // Theme colors
 
 $code-bg-color-light:     rgba($purple-color, 0.05);
 $code-bg-color-dark:      #2c3237 !default;
 
-$theme-color-light:       $blue-color !default;      // Por ejemplo, usa tu $blue-color para el acento claro
-$theme-color-dark:        $cyan-color !default;      // Por ejemplo, usa tu $cyan-color para el acento oscuro
-$theme-bg-color-light:    $white-color !default;     // Color de fondo para el modo claro
-$theme-bg-color-dark:     $grey-color-dark !default; // Color de fondo para el modo oscuro
+// Font awesome location
+$fa-font-path: "../webfonts";
