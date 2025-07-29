@@ -51,3 +51,116 @@ body.sticky-bottom-footer {
 *****************************************************************************/
 
 // TODO: redefine projects layout.
+
+/*******************************************************************************
+ * Layout
+ ******************************************************************************/
+
+/* _sass/_layout.scss */
+
+// Importaciones (asegúrate de que estas existan o añádelas si son necesarias)
+@import "base";
+@import "distill";
+// @import "pages";
+
+// Ajustes globales
+body {
+  font-family: var(--global-font-family);
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
+  line-height: 1.6;
+}
+
+// Estilos para el bloque de perfil en la página About
+.profile {
+  text-align: center; /* Centra el contenido del bloque de perfil */
+  margin-bottom: 30px; /* Espacio debajo del bloque de perfil */
+  padding-top: 30px; /* Un poco de padding arriba para el contenido del perfil */
+
+  img {
+    /* Estilos para la imagen de perfil */
+    max-width: 180px; /* Ajusta este valor para controlar el tamaño del círculo. Por ejemplo, 150px, 200px. */
+    max-height: 180px; /* Asegura que la altura sea la misma para mantener el círculo si la imagen es circular */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    margin-top: 0px; /* No necesitamos margen superior si ya el .profile tiene padding */
+    margin-bottom: 10px; /* Margen inferior para separar la imagen del nombre */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid var(--global-theme-color); /* Opcional: añade un borde del color del tema */
+  }
+
+  .profile-name {
+    /* Estilos para el nombre debajo de la imagen */
+    font-size: 1.5em; /* Ajusta este valor para hacer el nombre más pequeño. Por ejemplo, 1.3em, 1.6em. */
+    margin-top: 5px; /* Ajusta el margen superior del nombre si es necesario */
+    margin-bottom: 5px; /* Ajusta el margen inferior del nombre */
+    font-weight: bold; /* Hacer el nombre negrita si quieres */
+    color: var(--global-text-color);
+  }
+
+  .tagline {
+    /* Estilos para la nueva frase (tagline) */
+    font-size: 0.95em; /* Un poco más pequeño que el texto normal, o ajusta a tu gusto */
+    color: var(--global-text-color-light); /* Un color de texto más suave */
+    margin-top: 5px; /* Espacio entre el nombre y la frase */
+    margin-bottom: 15px; /* Espacio entre la frase y las redes sociales */
+    font-style: italic; /* Opcional: texto en cursiva */
+  }
+
+  .address { /* Si usas 'address' para el email y quieres estilo */
+    font-size: 0.95em;
+    color: var(--global-text-color-light);
+    margin-bottom: 10px;
+  }
+
+  .more-info {
+    /* Estilos para la información adicional (tu "Welcome to my personal website!") */
+    font-size: 0.95em;
+    color: var(--global-text-color); /* Podría ser global-text-color o global-text-color-light */
+    margin-top: 10px; /* Espacio después de tagline o email */
+    margin-bottom: 20px; /* Espacio antes de las redes sociales */
+  }
+
+  .social {
+    /* Estilos para las redes sociales */
+    margin-top: 20px; /* Margen superior para separarlo del texto anterior */
+    padding-bottom: 20px; /* Espacio inferior */
+
+    .contact-icons {
+      margin-bottom: 10px; /* Espacio entre los íconos y la nota de contacto */
+    }
+  }
+}
+
+/* Otros estilos de layout que ya tengas */
+
+.col-12 {
+  width: 100%;
+}
+
+.clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Estilos responsivos (ejemplo, puedes tener tus propios media queries)
+@media (max-width: 768px) {
+  .profile {
+    img {
+      max-width: 150px; // Un poco más pequeño en móviles
+      max-height: 150px;
+    }
+    .profile-name {
+      font-size: 1.3em; // Nombre más pequeño en móviles
+    }
+    .tagline {
+      font-size: 0.9em; // Frase más pequeña en móviles
+    }
+  }
+}
+
+// ... otros estilos que tengas en tu _layout.scss
