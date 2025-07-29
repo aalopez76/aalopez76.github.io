@@ -89,26 +89,28 @@ body.sticky-bottom-footer {
   }
 
   .social {
-  /* Estilos para las redes sociales (iconos y nota de contacto) */
-  margin-top: 20px; /* Margen superior para separarlo del texto anterior (nombre/frase/more_info) */
-  padding-bottom: 20px; /* Espacio inferior */
+    /* Estilos para las redes sociales (iconos y nota de contacto) */
+    margin-top: 20px; /* Margen superior para separarlo del texto anterior (nombre/frase/more_info) */
+    padding-bottom: 20px; /* Espacio inferior */
 
-  .contact-icons {
-    margin-bottom: 10px; /* Espacio entre los íconos y la nota de contacto */
-    
-    a {
-      font-size: 0.95rem; /* Cambia este valor para iconos más grandes/pequeños */
-      margin: 0 10px; /* Espaciado entre iconos */
-      color: var(--global-theme-color); /* Color de los iconos */
-      transition: all 0.2s ease; /* Animación suave al hacer hover */
+    .contact-icons {
+      margin-bottom: 10px; /* Espacio entre los íconos y la nota de contacto */
       
-      &:hover {
-        color: var(--global-hover-color); /* Color al pasar el mouse */
-        transform: scale(1.1); /* Efecto de crecimiento al hover */
+      a {
+        font-size: 0.95rem; /* Cambia este valor para iconos más grandes/pequeños */
+        margin: 0 10px; /* Espaciado entre iconos */
+        color: var(--global-theme-color); /* Color de los iconos */
+        transition: all 0.2s ease; /* Animación suave al hacer hover */
+        
+        &:hover {
+          color: var(--global-hover-color); /* Color al pasar el mouse */
+          transform: scale(1.1); /* Efecto de crecimiento al hover */
+        }
       }
     }
   }
 }
+  
 
 /* Clearfix para manejar flotantes, si los hay en tu layout */
 .clearfix {
