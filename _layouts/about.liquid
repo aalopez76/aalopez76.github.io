@@ -3,19 +3,7 @@ layout: default
 ---
 <div class="post">
   <header class="post-header">
-    {# Este bloque h1 se ha movido DENTRO del div de perfil para aparecer bajo la foto #}
-    {# por lo tanto, lo comentamos o eliminamos de aquí para evitar duplicación. #}
-    {#
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-    #}
+    {# El bloque h1 original estaba comentado, así que se mantiene sin el, lo cual es correcto. #}
   </header>
 
   <article>
@@ -23,24 +11,22 @@ layout: default
       <div class="profile 
         {% if page.profile.align == 'left' %}float-left{% endif %}
         {% if page.profile.align == 'right' %}float-right{% endif %}
-        {% if page.profile.align == 'center' %}text-center mx-auto{% endif %}"> {# APLICADO: text-center y mx-auto para centrar el bloque de perfil #}
+        {% if page.profile.align == 'center' %}text-center mx-auto{% endif %}">
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle mx-auto' %} {# APLICADO: mx-auto para centrar la imagen en sí #}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle mx-auto' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded mx-auto' %} {# APLICADO: mx-auto para centrar la imagen en sí #}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded mx-auto' %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
+          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
           {%
             include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
             cache_bust=true
           %}
         {% endif %}
 
-        {# AÑADIDO: Nombre debajo de la imagen, con centrado y margen superior #}
-        <h2 class="profile-name text-center mt-3"> {# mt-3 es un margin-top de Bootstrap para separar de la imagen #}
+        <h2 class="profile-name text-center mt-3">
           {% if site.title == 'blank' %}
             <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
             {{ site.last_name }}
@@ -49,23 +35,19 @@ layout: default
           {% endif %}
         </h2>
         {% if site.email %}
-          <p class="text-center">{{ site.email }}</p> {# Opcional: Centrar el email también si lo tienes en _config.yml #}
+          <p class="text-center">{{ site.email }}</p>
         {% endif %}
-        {# FIN AÑADIDO #}
 
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
 
-        {# MOVIDO: Bloque social dentro del div de perfil, después del nombre/email #}
         {% if page.social %}
-          <div class="social text-center mt-3"> {# mt-3 para separar del nombre #}
+          <div class="social text-center mt-3">
             <div class="contact-icons">{% include social.liquid %}</div>
             <div class="contact-note">{{ site.contact_note }}</div>
           </div>
         {% endif %}
-        {# FIN MOVIDO #}
-
       </div>
     {% endif %}
 
@@ -92,21 +74,6 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
-    {# Este bloque social ha sido ELIMINADO de aquí porque se movió arriba #}
-    {#
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
-    #}
-
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-    {% endif %}
-  </article>
-</div>
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
     {% endif %}
