@@ -30,7 +30,7 @@ social: false # includes social icons at the bottom of the page
 
 ### Welcome to my personal website!
 
-**If there's one thing I trust... it's data!**
+**If there's one thing I trust... it's in the data!**
 
 I hold a Master's degree in Data Science and am currently pursuing a senior-level certification.
 
