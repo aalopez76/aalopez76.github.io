@@ -49,8 +49,8 @@ body.sticky-bottom-footer {
   
   img {
     /* Estilos para la imagen de perfil (la que es circular) */
-    max-width: 150px; /* Ajusta este valor para controlar el tamaño del círculo (Ej: 150px, 200px) */
-    max-height: 150px; /* Asegura que la altura sea la misma para mantener el círculo si la imagen es circular */
+    max-width: 170px; /* Ajusta este valor para controlar el tamaño del círculo (Ej: 150px, 200px) */
+    max-height: 170px; /* Asegura que la altura sea la misma para mantener el círculo si la imagen es circular */
     object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
     margin: 0 auto 10px auto !important; /* Centra la imagen y añade margen inferior */
     display: block !important; /* Para que margin-left/right: auto funcione */
@@ -60,7 +60,7 @@ body.sticky-bottom-footer {
 
   .profile-name {
     /* Estilos para el nombre debajo de la imagen */
-    font-size: 1.3em; /* Ajusta este valor para hacer el nombre más pequeño (Ej: 1.3em, 1.6em) */
+    font-size: 1.5em; /* Ajusta este valor para hacer el nombre más pequeño (Ej: 1.3em, 1.6em) */
     margin-top: 5px; /* Ajusta el margen superior del nombre si es necesario */
     margin-bottom: 5px; /* Ajusta el margen inferior del nombre */
     font-weight: bold; /* Hacer el nombre negrita si quieres */
@@ -75,21 +75,21 @@ body.sticky-bottom-footer {
 
   .social {
     /* Estilos para las redes sociales (iconos y nota de contacto) */
-    margin-top: 20px; /* Margen superior para separarlo del texto anterior (nombre/frase/more_info) */
-    padding-bottom: 20px; /* Espacio inferior */
+    margin-top: 10px; /* Margen superior para separarlo del texto anterior (nombre/frase/more_info) */
+    padding-bottom: 15px; /* Espacio inferior */
 
     .contact-icons {
-      margin-bottom: 10px; /* Espacio entre los íconos y la nota de contacto */
+      margin-bottom: 5px; /* Espacio entre los íconos y la nota de contacto */
       
       a {
         font-size: 1.2rem; /* Cambia este valor para iconos más grandes/pequeños */
-        margin: 0 10px; /* Espaciado entre iconos */
+        margin: 0 5px; /* Espaciado entre iconos */
         color: var(--global-theme-color) !important; /* Mismo color que "about" */
         text-decoration: none; /* Sin subrayado */
         transition: all 0.2s ease; /* Animación suave al hacer hover */
         
         &:hover {
-          opacity: 0.7; /* Ligera transparencia al hover */
+          opacity: 0.4; /* Ligera transparencia al hover */
           transform: scale(1.1); /* Efecto de crecimiento al hover */
         }
       }
