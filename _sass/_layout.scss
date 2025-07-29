@@ -1,57 +1,3 @@
-/******************************************************************************
- * Content
- ******************************************************************************/
-
-body {
-  padding-bottom: 70px;
-  color: var(--global-text-color);
-  background-color: var(--global-bg-color);
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    scroll-margin-top: 66px;
-  }
-}
-
-body.fixed-top-nav {
-  // Add some padding for the nav-bar.
-  padding-top: 56px;
-}
-
-body.sticky-bottom-footer {
-  // Remove padding below footer.
-  padding-bottom: 0;
-}
-
-.container {
-  max-width: $max-content-width;
-}
-
-// Profile
-.profile {
-  img {
-    width: 100%;
-  }
-}
-
-// TODO: redefine content layout.
-
-/******************************************************************************
- * Publications
- ******************************************************************************/
-
-// TODO: redefine publications layout.
-
-/*****************************************************************************
-* Projects
-*****************************************************************************/
-
-// TODO: redefine projects layout.
-
 /*******************************************************************************
  * Layout
  ******************************************************************************/
@@ -61,42 +7,65 @@ body.sticky-bottom-footer {
 // Importaciones (asegúrate de que estas existan o añádelas si son necesarias)
 @import "base";
 @import "distill";
-// @import "pages";
+// @import "pages"; // Comenta o descomenta según si usas un archivo _pages.scss
 
-// Ajustes globales
+// Ajustes globales para el cuerpo del documento
 body {
-  font-family: var(--global-font-family);
-  color: var(--global-text-color);
-  background-color: var(--global-bg-color);
-  line-height: 1.6;
+  padding-bottom: 70px; // Espacio inferior para el pie de página
+  color: var(--global-text-color); // Color de texto global
+  background-color: var(--global-bg-color); // Color de fondo global
+  line-height: 1.6; // Altura de línea para legibilidad
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    scroll-margin-top: 66px; // Para desplazamiento suave a encabezados
+  }
+}
+
+body.fixed-top-nav {
+  // Añade relleno superior para la barra de navegación fija
+  padding-top: 56px;
+}
+
+body.sticky-bottom-footer {
+  // Elimina el relleno inferior si el pie de página es pegajoso
+  padding-bottom: 0;
+}
+
+.container {
+  max-width: $max-content-width; // Ancho máximo del contenedor principal
 }
 
 // Estilos para el bloque de perfil en la página About
 .profile {
-  text-align: center; /* Centra el contenido del bloque de perfil */
+  text-align: center; /* Centra el contenido del bloque de perfil (imagen, texto, iconos) */
   margin-bottom: 30px; /* Espacio debajo del bloque de perfil */
-  padding-top: 30px; /* Un poco de padding arriba para el contenido del perfil */
+  padding-top: 30px; /* Un poco de padding arriba para separar del contenido superior de la página */
 
   img {
-    /* Estilos para la imagen de perfil */
-    max-width: 180px; /* Ajusta este valor para controlar el tamaño del círculo. Por ejemplo, 150px, 200px. */
+    /* Estilos para la imagen de perfil (la que es circular) */
+    max-width: 180px; /* Ajusta este valor para controlar el tamaño del círculo (Ej: 150px, 200px) */
     max-height: 180px; /* Asegura que la altura sea la misma para mantener el círculo si la imagen es circular */
     object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
     margin-top: 0px; /* No necesitamos margen superior si ya el .profile tiene padding */
     margin-bottom: 10px; /* Margen inferior para separar la imagen del nombre */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: block; /* Para que margin-left/right: auto funcione */
+    margin-left: auto; /* Centra la imagen horizontalmente */
+    margin-right: auto; /* Centra la imagen horizontalmente */
     border: 3px solid var(--global-theme-color); /* Opcional: añade un borde del color del tema */
   }
 
   .profile-name {
     /* Estilos para el nombre debajo de la imagen */
-    font-size: 1.5em; /* Ajusta este valor para hacer el nombre más pequeño. Por ejemplo, 1.3em, 1.6em. */
+    font-size: 1.5em; /* Ajusta este valor para hacer el nombre más pequeño (Ej: 1.3em, 1.6em) */
     margin-top: 5px; /* Ajusta el margen superior del nombre si es necesario */
     margin-bottom: 5px; /* Ajusta el margen inferior del nombre */
     font-weight: bold; /* Hacer el nombre negrita si quieres */
-    color: var(--global-text-color);
+    color: var(--global-text-color); /* Asegura que el color sea legible */
   }
 
   .tagline {
@@ -108,7 +77,7 @@ body {
     font-style: italic; /* Opcional: texto en cursiva */
   }
 
-  .address { /* Si usas 'address' para el email y quieres estilo */
+  .address { /* Si usas 'address' para el email/contacto y quieres estilo */
     font-size: 0.95em;
     color: var(--global-text-color-light);
     margin-bottom: 10px;
@@ -123,8 +92,8 @@ body {
   }
 
   .social {
-    /* Estilos para las redes sociales */
-    margin-top: 20px; /* Margen superior para separarlo del texto anterior */
+    /* Estilos para las redes sociales (iconos y nota de contacto) */
+    margin-top: 20px; /* Margen superior para separarlo del texto anterior (nombre/frase/more_info) */
     padding-bottom: 20px; /* Espacio inferior */
 
     .contact-icons {
@@ -133,12 +102,7 @@ body {
   }
 }
 
-/* Otros estilos de layout que ya tengas */
-
-.col-12 {
-  width: 100%;
-}
-
+/* Clearfix para manejar flotantes, si los hay en tu layout */
 .clearfix {
   &::after {
     content: "";
@@ -147,7 +111,7 @@ body {
   }
 }
 
-// Estilos responsivos (ejemplo, puedes tener tus propios media queries)
+// Estilos responsivos para dispositivos con ancho de pantalla limitado
 @media (max-width: 768px) {
   .profile {
     img {
@@ -163,4 +127,18 @@ body {
   }
 }
 
-// ... otros estilos que tengas en tu _layout.scss
+// Puedes añadir aquí otras secciones de layout si tu tema las tiene y las necesitas,
+// como por ejemplo, estilos para publicaciones, proyectos, etc.,
+// pero asegúrate de que no dupliquen selectores ya definidos.
+// Por ejemplo:
+/*****************************************************************************
+* Publications
+*****************************************************************************/
+
+// .publication-item { /* Tus estilos para items de publicación */ }
+
+/*****************************************************************************
+* Projects
+*****************************************************************************/
+
+// .project-card { /* Tus estilos para tarjetas de proyecto */ }
