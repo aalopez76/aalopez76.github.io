@@ -73,7 +73,7 @@ body.sticky-bottom-footer {
     padding-bottom: 18px; /* Espacio inferior */
 
     .contact-icons {
-      margin-bottom: 10px; /* Espacio entre los íconos y la nota de contacto */
+      margin-bottom: 1px; /* Espacio entre los íconos y la nota de contacto */
       
       a {
         font-size: 1.8rem; /* Cambia este valor para iconos más grandes/pequeños */
@@ -89,7 +89,7 @@ body.sticky-bottom-footer {
       }
     }
   }
-} // ASEGÚRATE DE QUE ESTA LLAVE CIERRE EL BLOQUE .profile
+} 
 
 /* Clearfix para manejar flotantes, si los hay en tu layout */
 .clearfix {
