@@ -1,20 +1,11 @@
-/*******************************************************************************
- * Layout
+/******************************************************************************
+ * Content
  ******************************************************************************/
 
-/* _sass/_layout.scss */
-
-// Importaciones (asegúrate de que estas existan o añádelas si son necesarias)
-@import "base";
-@import "distill";
-// @import "pages"; // Comenta o descomenta según si usas un archivo _pages.scss
-
-// Ajustes globales para el cuerpo del documento
 body {
-  padding-bottom: 70px; // Espacio inferior para el pie de página
-  color: var(--global-text-color); // Color de texto global
-  background-color: var(--global-bg-color); // Color de fondo global
-  line-height: 1.6; // Altura de línea para legibilidad
+  padding-bottom: 70px;
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
 
   h1,
   h2,
@@ -22,108 +13,41 @@ body {
   h4,
   h5,
   h6 {
-    scroll-margin-top: 66px; // Para desplazamiento suave a encabezados
+    scroll-margin-top: 66px;
   }
 }
 
 body.fixed-top-nav {
-  // Añade relleno superior para la barra de navegación fija
+  // Add some padding for the nav-bar.
   padding-top: 56px;
 }
 
 body.sticky-bottom-footer {
-  // Elimina el relleno inferior si el pie de página es pegajoso
+  // Remove padding below footer.
   padding-bottom: 0;
 }
 
 .container {
-  max-width: $max-content-width; // Ancho máximo del contenedor principal
+  max-width: $max-content-width;
 }
 
-// Estilos para el bloque de perfil en la página About
+// Profile
 .profile {
-  text-align: center; /* Centra el contenido del bloque de perfil (imagen, texto, iconos) */
-  margin-bottom: 25px; /* Espacio debajo del bloque de perfil */
-  padding-top: 20px; /* Un poco de padding arriba para separar del contenido superior de la página */
-  float: none !important; /* Fuerza que no haya float */
-  
   img {
-    /* Estilos para la imagen de perfil (la que es circular) */
-    max-width: 170px; /* Ajusta este valor para controlar el tamaño del círculo (Ej: 150px, 200px) */
-    max-height: 170px; /* Asegura que la altura sea la misma para mantener el círculo si la imagen es circular */
-    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
-    margin: 0 auto 10px auto !important; /* Centra la imagen y añade margen inferior */
-    display: block !important; /* Para que margin-left/right: auto funcione */
-    border: 3px solid var(--global-theme-color); /* Opcional: añade un borde del color del tema */
-    float: none !important; /* Elimina cualquier float */
-  }
-
-  .profile-name {
-    /* Estilos para el nombre debajo de la imagen */
-    font-size: 1.5em; /* Ajusta este valor para hacer el nombre más pequeño (Ej: 1.3em, 1.6em) */
-    margin-top: 5px; /* Ajusta el margen superior del nombre si es necesario */
-    margin-bottom: 0.1px; /* Ajusta el margen inferior del nombre */
-    /*font-weight: blod   Hacer el nombre negrita si quieres */
-    color: var(--global-text-color); /* Asegura que el color sea legible */
-  }
-
-  .social {
-    /* Estilos para las redes sociales (iconos y nota de contacto) */
-    margin-top: 0.1px; /* Margen superior para separarlo del texto anterior (nombre/frase/more_info) */
-    padding-bottom: 1px; /* Espacio inferior */
-
-    .contact-icons {
-      margin-bottom: 0.001px; /* Espacio entre los íconos y la nota de contacto */
-      
-      a {
-        font-size: 1.1rem; /* Cambia este valor para iconos más grandes/pequeños */
-        margin: 0 0.8px; /* Espaciado entre iconos */
-        color: var(--global-theme-color) !important; /* Mismo color que "about" */
-        text-decoration: none; /* Sin subrayado */
-        transition: all 0.2s ease; /* Animación suave al hacer hover */
-        
-        &:hover {
-          opacity: 0.7; /* Ligera transparencia al hover */
-          transform: scale(1.1); /* Efecto de crecimiento al hover */
-        }
-      }
-    }
-  }
-} 
-
-/* Clearfix para manejar flotantes, si los hay en tu layout */
-.clearfix {
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
+    width: 100%;
   }
 }
 
-// Estilos responsivos para dispositivos con ancho de pantalla limitado
-@media (max-width: 768px) {
-  .profile {
-    img {
-      max-width: 150px; // Un poco más pequeño en móviles
-      max-height: 150px;
-    }
-    .profile-name {
-      font-size: 1.3em; // Nombre más pequeño en móviles
-    }
-    .tagline {
-      font-size: 0.9em; // Frase más pequeña en móviles
-    }
-  }
-}
+// TODO: redefine content layout.
 
-/*****************************************************************************
-* Publications
-*****************************************************************************/
+/******************************************************************************
+ * Publications
+ ******************************************************************************/
 
-// .publication-item { /* Tus estilos para items de publicación */ }
+// TODO: redefine publications layout.
 
 /*****************************************************************************
 * Projects
 *****************************************************************************/
 
-// .project-card { /* Tus estilos para tarjetas de proyecto */ }
+// TODO: redefine projects layout.
