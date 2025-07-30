@@ -70,14 +70,14 @@ body.sticky-bottom-footer {
   .social {
     /* Estilos para las redes sociales (iconos y nota de contacto) */
     margin-top: 1px; /* Margen superior para separarlo del texto anterior (nombre/frase/more_info) */
-    padding-bottom: 18px; /* Espacio inferior */
+    padding-bottom: 1px; /* Espacio inferior */
 
     .contact-icons {
-      margin-bottom: 0.5px; /* Espacio entre los íconos y la nota de contacto */
+      margin-bottom: 0.01px; /* Espacio entre los íconos y la nota de contacto */
       
       a {
         font-size: 1.1rem; /* Cambia este valor para iconos más grandes/pequeños */
-        margin: 0 5px; /* Espaciado entre iconos */
+        margin: 0 2px; /* Espaciado entre iconos */
         color: var(--global-theme-color) !important; /* Mismo color que "about" */
         text-decoration: none; /* Sin subrayado */
         transition: all 0.2s ease; /* Animación suave al hacer hover */
