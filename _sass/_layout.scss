@@ -43,8 +43,8 @@ body.sticky-bottom-footer {
 // Estilos para el bloque de perfil en la página About
 .profile {
   text-align: center; /* Centra el contenido del bloque de perfil (imagen, texto, iconos) */
-  margin-bottom: 30px; /* Espacio debajo del bloque de perfil */
-  padding-top: 30px; /* Un poco de padding arriba para separar del contenido superior de la página */
+  margin-bottom: 25px; /* Espacio debajo del bloque de perfil */
+  padding-top: 20px; /* Un poco de padding arriba para separar del contenido superior de la página */
   float: none !important; /* Fuerza que no haya float */
   
   img {
@@ -76,7 +76,7 @@ body.sticky-bottom-footer {
       margin-bottom: 10px; /* Espacio entre los íconos y la nota de contacto */
       
       a {
-        font-size: 1.2rem; /* Cambia este valor para iconos más grandes/pequeños */
+        font-size: 1.8rem; /* Cambia este valor para iconos más grandes/pequeños */
         margin: 0 5px; /* Espaciado entre iconos */
         color: var(--global-theme-color) !important; /* Mismo color que "about" */
         text-decoration: none; /* Sin subrayado */
