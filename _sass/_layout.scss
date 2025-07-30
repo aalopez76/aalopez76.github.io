@@ -62,22 +62,22 @@ body.sticky-bottom-footer {
     /* Estilos para el nombre debajo de la imagen */
     font-size: 1.5em; /* Ajusta este valor para hacer el nombre más pequeño (Ej: 1.3em, 1.6em) */
     margin-top: 5px; /* Ajusta el margen superior del nombre si es necesario */
-    margin-bottom: 5px; /* Ajusta el margen inferior del nombre */
+    margin-bottom: 0.1px; /* Ajusta el margen inferior del nombre */
     /*font-weight: blod   Hacer el nombre negrita si quieres */
     color: var(--global-text-color); /* Asegura que el color sea legible */
   }
 
   .social {
     /* Estilos para las redes sociales (iconos y nota de contacto) */
-    margin-top: 1px; /* Margen superior para separarlo del texto anterior (nombre/frase/more_info) */
+    margin-top: 0.1px; /* Margen superior para separarlo del texto anterior (nombre/frase/more_info) */
     padding-bottom: 1px; /* Espacio inferior */
 
     .contact-icons {
-      margin-bottom: 0.01px; /* Espacio entre los íconos y la nota de contacto */
+      margin-bottom: 0.001px; /* Espacio entre los íconos y la nota de contacto */
       
       a {
         font-size: 1.1rem; /* Cambia este valor para iconos más grandes/pequeños */
-        margin: 0 2px; /* Espaciado entre iconos */
+        margin: 0 0.8px; /* Espaciado entre iconos */
         color: var(--global-theme-color) !important; /* Mismo color que "about" */
         text-decoration: none; /* Sin subrayado */
         transition: all 0.2s ease; /* Animación suave al hacer hover */
