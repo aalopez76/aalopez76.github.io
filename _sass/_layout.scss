@@ -52,7 +52,7 @@ body.sticky-bottom-footer {
     max-width: 170px; /* Ajusta este valor para controlar el tamaño del círculo (Ej: 150px, 200px) */
     max-height: 170px; /* Asegura que la altura sea la misma para mantener el círculo si la imagen es circular */
     object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
-    margin: 10 auto 10px auto !important; /* Centra la imagen y añade margen inferior */
+    margin: 0 auto 10px auto !important; /* Centra la imagen y añade margen inferior */
     display: block !important; /* Para que margin-left/right: auto funcione */
     border: 3px solid var(--global-theme-color); /* Opcional: añade un borde del color del tema */
     float: none !important; /* Elimina cualquier float */
@@ -69,11 +69,11 @@ body.sticky-bottom-footer {
 
   .social {
     /* Estilos para las redes sociales (iconos y nota de contacto) */
-    margin-top: 5px; /* Margen superior para separarlo del texto anterior (nombre/frase/more_info) */
+    margin-top: 1px; /* Margen superior para separarlo del texto anterior (nombre/frase/more_info) */
     padding-bottom: 18px; /* Espacio inferior */
 
     .contact-icons {
-      margin-bottom: 1px; /* Espacio entre los íconos y la nota de contacto */
+      margin-bottom: 0.5px; /* Espacio entre los íconos y la nota de contacto */
       
       a {
         font-size: 1.1rem; /* Cambia este valor para iconos más grandes/pequeños */
