@@ -28,7 +28,7 @@ social: false # includes social icons at the bottom of the page
 # FIN DE LA SECCIÓN CORREGIDA
 ---
 
-### Welcome to my personal website!!-!-
+### Welcome to my personal website!
 
 **If there's one thing I trust... it's data!**
 
@@ -38,8 +38,8 @@ In a non-deterministic world, my curiosity has led me to explore the hidden insi
 
 **The answer lies in the data - it's just a matter of asking the right question.**
 
-With cutting-edge tools, advanced models, and the support of artificial intelligence, it's possible to deliver strategic insights that are both grounded and effective. My professional background has provided me with a deep understanding of how complex theoretical frameworks can be applied to solve demanding challenges with the precision and clarity that only experience can provide.
+With cutting-edge tools, advanced models, and the support of **artificial intelligence**, it's possible to deliver strategic insights that are both grounded and effective. My professional background has provided me with a deep understanding of how complex theoretical frameworks can be applied to solve demanding challenges with the precision and clarity that only experience can provide.
 
 My interests range from rigorously, yet accessibly, explaining classic machine learning algorithms to exploring the latest advances in deep learning. My focus is on applying advanced analytics to deliver practical and professional solutions.
 
-#### Data holds hidden potential!
+**Data holds hidden potential!**
