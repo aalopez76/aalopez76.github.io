@@ -1,3 +1,6 @@
+---
+# Este front matter es esencial para que Jekyll procese Liquid aquí.
+---
 /*******************************************************************************
  * Variables used throughout the theme.
  * To adjust anything, simply edit the variables below and rebuild the theme.
@@ -105,6 +108,5 @@ $back-to-top-diameter: 40px;
 $back-to-top-height: $back-to-top-diameter;
 $back-to-top-width: $back-to-top-diameter;
 
----
-// Aquí irán todas tus variables SCSS, incluyendo las que vienen de _config.yml
+// Global theme dimensions
 $max-content-width: {{ site.max_width }};
