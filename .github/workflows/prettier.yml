@@ -1,5 +1,4 @@
 name: Prettier code formatter
-
 on:
   pull_request:
     branches:
@@ -10,6 +9,9 @@ on:
       - master
       - main
 
+permissions:
+  contents: write
+
 jobs:
   check:
     # available images: https://github.com/actions/runner-images#available-images
@@ -17,32 +19,73 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+        with:
+          # Token necesario para push automático
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Setup Node.js ⚙️
         uses: actions/setup-node@v4
+
       - name: Install Prettier 💾
         run: npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
+
       - name: Prettier Check 🔎
         id: prettier
         run: npx prettier . --check
+        continue-on-error: true
+
+      - name: Auto-fix formatting 🔧
+        if: ${{ failure() && steps.prettier.conclusion == 'failure' && github.event_name == 'push' }}
+        run: |
+          echo "Applying Prettier formatting..."
+          npx prettier . --write
+          
+          # Configurar git
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Verificar si hay cambios
+          if ! git diff --quiet; then
+            echo "Committing formatting changes..."
+            git add -A
+            git commit -m "style: apply Prettier formatting [skip ci]"
+            git push
+            echo "✅ Formatting applied and committed"
+          else
+            echo "No formatting changes needed"
+          fi
+
       - name: Create diff 📝
-        # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
-        if: ${{ failure() }}
+        # Solo crear diff si no se auto-arregló (ej: en PRs)
+        if: ${{ failure() && steps.prettier.conclusion == 'failure' && github.event_name == 'pull_request' }}
         run: |
           npx prettier . --write
           git diff -- . ':(exclude)package-lock.json' ':(exclude)package.json' > diff.txt
           npm install -g diff2html-cli
           diff2html -i file -s side -F diff.html -- diff.txt
+
       - name: Upload html diff ⬆️
         id: artifact-upload
-        if: ${{ failure() && steps.prettier.conclusion == 'failure' }}
+        if: ${{ failure() && steps.prettier.conclusion == 'failure' && github.event_name == 'pull_request' }}
         uses: actions/upload-artifact@v4
         with:
           name: HTML Diff
           path: diff.html
           retention-days: 7
+
       - name: Dispatch information to repository 🗣️
         if: ${{ failure() && steps.prettier.conclusion == 'failure' && github.event_name == 'pull_request' }}
         uses: peter-evans/repository-dispatch@v2
         with:
           event-type: prettier-failed-on-pr
           client-payload: '{"pr_number": "${{ github.event.number }}", "artifact_url": "${{ steps.artifact-upload.outputs.artifact-url }}", "run_id": "${{ github.run_id }}"}'
+
+      - name: Final check ✅
+        if: ${{ steps.prettier.conclusion == 'failure' && github.event_name == 'push' }}
+        run: |
+          if npx prettier . --check; then
+            echo "✅ All files are now properly formatted"
+          else
+            echo "❌ Some files still need formatting"
+            exit 1
+          fi
