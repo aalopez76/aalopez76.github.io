@@ -2,11 +2,11 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Arturo A. López # the website title (if blank, full name will be used instead)
+title: aalopez # the website title (if blank, full name will be used instead)
 first_name: Arturo
 middle_name: Abraham
-last_name: Lopez
-suffix: Pérezz
+last_name: López
+suffix: Pérez
 #contact_note: >
  #You can even add a little note about which of these is the best way to reach you.
  #description: > # the ">" symbol means to ignore newlines until "footer_text:"
