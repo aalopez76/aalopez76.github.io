@@ -28,7 +28,7 @@ social: false # includes social icons at the bottom of the page
 # FIN DE LA SECCIÓN CORREGIDA
 ---
 
-### Welcome to my personal website!!-!
+### Welcome to my personal website!!-!-
 
 **If there's one thing I trust... it's data!**
 
