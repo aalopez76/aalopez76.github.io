@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Bienvenido a mi blog de Data Science
-date: 2025-02-01
-description: Primera publicación de mi blog personal
-tags: [data-science, analytics] 
-categories: blog
-featured: true
----
+title: Welcome to My Data Science Blog  
+date: 2024-06-05  
+description: First post on my personal blog  
+tags: [data-science, analytics]  
+categories: blog  
+featured: true  
+---  
 
-¡Hola! Soy aalopez, y hoy estreno este blog donde exploraremos juntos el fascinante mundo del Data Science. 
+Hi there! I’m Arturo, and I’m thrilled to launch this blog where we’ll explore the fascinating world of Data Science together.  
 
-**¿Por qué este blog?**  
-Como recién llegado/a al campo, entiendo lo abrumador que puede ser aprender conceptos como *feature engineering* o *deep learning*. Aquí compartiré tutoriales sencillos, proyectos personales y recursos que me han ayudado, con la esperanza de que también te sean útiles.
+**Why This Blog?**  
+As someone who’s just starting in this field, I know how overwhelming it can be to tackle concepts like *feature engineering* or *deep learning*. Here, I’ll share beginner-friendly tutorials, personal projects, and resources that have helped me—hopefully, they’ll help you too!  
 
-**¿Qué encontrarás aquí?**  
-- Análisis de datasets públicos (ej: COVID-19, tendencias en redes sociales).  
-- Guías paso a paso (ej: "Tu primer modelo de clasificación con Scikit-learn").  
-- Reflexiones sobre el futuro de la IA y la analítica de datos.  
+**What to Expect:**  
+- Walkthroughs of public datasets.  
+- Step-by-step guides.  
+- Thoughts on the future of AI and data analytics.  
 
-**Próximamente:**  
-En mi siguiente post, desglosaré cómo usar Pandas para limpiar datos desordenados ¡con ejemplos prácticos! 
+**Coming Soon:**  
+In my next post, I’ll break down how to clean messy data using Pandas—with real-world examples!  
 
-¿Te interesa algún tema en particular? ¡Cuéntame en los comentarios o sígueme en [Twitter/LinkedIn] para más updates! 🚀
+Got a topic you’d like me to cover? Let me know in the comments or follow me on [Twitter/LinkedIn] for updates!   
