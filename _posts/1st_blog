@@ -3,7 +3,7 @@ layout: post
 title: Bienvenido a mi blog de Data Science
 date: 2024-06-05
 description: Primera publicación de mi blog personal
-tags: data-science analytics
+tags: [data-science, analytics] 
 categories: blog
 featured: true
 ---
