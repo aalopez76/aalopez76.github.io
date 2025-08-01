@@ -2,7 +2,7 @@
 layout: page
 title: project 4
 description: another without an image
-img:assets/img/D&G.png
+img: /assets/img/D&G.png
 importance: 3
 category: Stakeholder
 ---
