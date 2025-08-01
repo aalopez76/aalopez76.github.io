@@ -1,16 +1,24 @@
 ---
 layout: post
 title: Bienvenido a mi blog de Data Science
-date: 2024-06-05
+date: 2025-02-01
 description: Primera publicación de mi blog personal
 tags: [data-science, analytics] 
 categories: blog
 featured: true
 ---
 
+¡Hola! Soy aalopez, y hoy estreno este blog donde exploraremos juntos el fascinante mundo del Data Science. 
 
-Bienvenidos a mi espacio personal donde compartiré insights sobre data science, análisis de datos y tendencias en el mundo de los datos.
+**¿Por qué este blog?**  
+Como recién llegado/a al campo, entiendo lo abrumador que puede ser aprender conceptos como *feature engineering* o *deep learning*. Aquí compartiré tutoriales sencillos, proyectos personales y recursos que me han ayudado, con la esperanza de que también te sean útiles.
 
-[Tu contenido aquí...] =D.
+**¿Qué encontrarás aquí?**  
+- Análisis de datasets públicos (ej: COVID-19, tendencias en redes sociales).  
+- Guías paso a paso (ej: "Tu primer modelo de clasificación con Scikit-learn").  
+- Reflexiones sobre el futuro de la IA y la analítica de datos.  
 
+**Próximamente:**  
+En mi siguiente post, desglosaré cómo usar Pandas para limpiar datos desordenados ¡con ejemplos prácticos! 
 
+¿Te interesa algún tema en particular? ¡Cuéntame en los comentarios o sígueme en [Twitter/LinkedIn] para más updates! 🚀
