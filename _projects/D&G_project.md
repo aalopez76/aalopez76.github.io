@@ -9,6 +9,9 @@ category: Stakeholder
 
 This document outlines a data governance implementation roadmap for *La Ferme*, a dairy production company in early-stage digital transformation, using DCAM as guiding framework.
 
+**Project Code Repository:**  
+[Digitalization-Data-Governance](https://github.com/aalopez76/Digitalization-Data-Governance)
+
 ## Project Background
 
 *La Ferme* is a Mexican company dedicated to the **artisanal pasteurization of cow cream**, operating continuously since 1980. Its business model has historically relied on manual production processes to deliver high-quality pasteurized cream to various local retailers. For over four decades, **inventory management, quality control, production logs, and sales records** have been handled manually and in a non-standardized manner.
