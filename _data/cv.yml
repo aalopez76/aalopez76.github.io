@@ -74,7 +74,7 @@
 - title: Certifications 
   type: list_groups 
   contents:
-    - category: '<a href="https://drive.google.com/drive/folders/1KUmL_1Qpodog7SOJ3B6VQdzDUKr2WHwl?usp=drive_link">Kaggle Certifications</a>'
+    - category: '<a href="https://drive.google.com/drive/folders/1JffueL6cK8om6mylYcc4X-D9gHvnUC5_?usp=sharing">Kaggle Certifications</a>'
       icon: fas fa-certificate
       items:
         - name: Kaggle
