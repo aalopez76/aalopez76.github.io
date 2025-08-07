@@ -52,11 +52,25 @@
   type: nested_list
   contents:
     - title: Programming & Databases
-      type: list
       items:
-        - Python / R
-        - SQL / MongoDB
-    
+        - Python/ R
+        - SQL/ MongoDB/ Firebase
+    - title: Machine Learning & Deep Learning
+      items:
+        - Scikit-learn/ TensorFlow/ Keras
+        - CNN/ RNN/ GM/ DQNN
+    - title: Big Data & Distributed Computing
+      items:
+        - Apache Spark
+    - title: Data Visualization & Business Intelligence (BI)
+      contents:
+        - Power BI/ Streamlit
+    - title: DevOps & MLOps
+      contents:
+        - Git/ GitHub
+        - Docker/ Kubernetes
+        - AWS
+            
 - title: Certifications 
   type: list_groups 
   contents:
