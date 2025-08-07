@@ -48,16 +48,6 @@
         - Taught undergraduate and graduate-level courses in Applied Mathematics, Statistics, and Introduction to Data Science.
         - Designed and delivered hands-on sessions covering mathematical modeling, programming in Python, and statistical inference.
 
-- title: Technical Skills # Esta es una nueva sección principal
-  type: list # O usa 'nested_list' si quieres categorías más detalladas
-  contents:
-    - SQL / MongoDB
-    - Python / R
-    - Scikit-learn / TensorFlow / keras
-    - CNN / RNN / GM / DQNN
-    - Git / GitHub
-    - Dockers / AWS
-
 - title: Technical Skills
   type: nested_list
   contents:
@@ -65,18 +55,6 @@
       contents:
         - Python / R
         - SQL / MongoDB
-    - title: Machine Learning & Deep Learning
-      contents:
-        - Scikit-learn / TensorFlow / Keras
-        - CNN / RNN / GM / DQNN
-    - title: DevOps & MLOps
-      contents:
-        - Git / GitHub
-        - Docker
-        - Apache Spark / Databricks
-        - Apache Airflow
-        - AWS
-        - MLflow / Kubeflow
     
 - title: Certifications 
   type: list_groups 
