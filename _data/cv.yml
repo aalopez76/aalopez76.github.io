@@ -54,10 +54,30 @@
     - SQL / MongoDB
     - Python / R
     - Scikit-learn / TensorFlow / keras
+    - CNN / RNN / GM / DQNN
     - Git / GitHub
     - Dockers / AWS
-    - CNN / RNN / GM / DQNN
 
+- title: Technical Skills
+  type: nested_list
+  contents:
+    - title: Programming & Databases
+      contents:
+        - Python / R
+        - SQL / MongoDB
+    - title: Machine Learning & Deep Learning
+      contents:
+        - Scikit-learn / TensorFlow / Keras
+        - CNN / RNN / GM / DQNN
+    - title: DevOps & MLOps
+      contents:
+        - Git / GitHub
+        - Docker
+        - Apache Spark / Databricks
+        - Apache Airflow
+        - AWS
+        - MLflow / Kubeflow
+    
 - title: Certifications 
   type: list_groups 
   contents:
