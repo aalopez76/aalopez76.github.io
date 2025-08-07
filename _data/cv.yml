@@ -52,6 +52,7 @@
   type: nested_list
   contents:
     - title: Programming & Databases
+      type: list
       contents:
         - Python / R
         - SQL / MongoDB
