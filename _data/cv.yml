@@ -63,10 +63,10 @@
       items:
         - Apache Spark
     - title: Data Visualization & Business Intelligence (BI)
-      contents:
+      items:
         - Power BI/ Streamlit
     - title: DevOps & MLOps
-      contents:
+      items:
         - Git/ GitHub
         - Docker/ Kubernetes
         - AWS
