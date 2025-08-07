@@ -53,7 +53,7 @@
   contents:
     - title: Programming & Databases
       type: list
-      contents:
+      items:
         - Python / R
         - SQL / MongoDB
     
