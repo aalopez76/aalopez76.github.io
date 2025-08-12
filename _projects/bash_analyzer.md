@@ -18,4 +18,4 @@ Among its features are:
 * **Output Management:** The results of the operations are automatically saved in separate folders (`output/` and `history/`), maintaining an organized work environment.
 
 You can explore the full source code and detailed instructions on my GitHub repository:
-[https://github.com/aalopez76/bash-analyzer](https://github.com/aalopez76/bash-analyzer)
+[bash-analyzer](https://github.com/aalopez76/bash-analyzer)
