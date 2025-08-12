@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: bash_analyzer
 description: Bash-based CLI tool for analyzing and auditing CSV and TSV datasets.
 img: assets/img/Shell.jpg
@@ -16,6 +16,8 @@ Among its features are:
 * **File Scan Mode:** It inspects your data's structure, detecting delimiters, counting rows and columns, and displaying content previews for a quick audit.
 * **Advanced Search and Filtering:** It allows searching with regular expressions, extracting rows or columns under specific conditions, and easily sorting data.
 * **Output Management:** The results of the operations are automatically saved in separate folders (`output/` and `history/`), maintaining an organized work environment.
+
+  
 
 You can explore the full source code and detailed instructions on my GitHub repository:
 [bash-analyzer](https://github.com/aalopez76/bash-analyzer)
