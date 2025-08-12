@@ -17,7 +17,7 @@ Among its features are:
 * **Advanced Search and Filtering:** It allows searching with regular expressions, extracting rows or columns under specific conditions, and easily sorting data.
 * **Output Management:** The results of the operations are automatically saved in separate folders (`output/` and `history/`), maintaining an organized work environment.
 
-  
+  ![App]({{ site.baseurl }}/assets/img/app.png)
 
 You can explore the full source code and detailed instructions on my GitHub repository:
 [bash-analyzer](https://github.com/aalopez76/bash-analyzer)
