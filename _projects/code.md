@@ -1,10 +1,10 @@
 ---
 layout: page
 title: a post with jupyter notebook
-date: 2023-07-04 08:57:00-0400
-description: an example of a blog post with jupyter notebook
-tags: formatting jupyter
-categories: personal
+description: an example of a blog post with jupyter notebook.
+img: assets/img/Shell.png
+importance: 3
+category: Personal
 ---
 
 To include a jupyter notebook in a post, you can use the following code:
