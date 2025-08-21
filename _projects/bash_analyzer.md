@@ -2,7 +2,7 @@
 layout: page
 title: bash_analyzer
 description: Bash-based CLI tool for analyzing and auditing CSV and TSV datasets.
-img: assets/img/Shell.jpg
+img: assets/img/Shell.png
 importance: 1
 category: Personal
 ---
