@@ -11,14 +11,11 @@ category: Personal
 This project focuses on building a dashboard to gain a comprehensive overview of the "Toys and Models" business. The main objective is to identify trends, areas of opportunity, and operational issues. The database contains detailed information about employees, products, orders, customers, and their payments.
 
 The database schema is as follows: 
+
+<div class="row justify-content-center"> <div class="col-md-8 mt-3 mt-md-0 text-center"> {% include figure.liquid loading="eager" path="assets/img/toys_and_models-db.png" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/toys_and_models-db.png" title="Toys and Models" class="img-fluid rounded z-depth-1" %}
-    </div>
 </div>
-<div class="caption">
-    The database schema.
+<div class="caption text-center"> The database schema.
 </div>
 
 Our goal is to extract the necessary data, starting with fundamental questions and then moving towards a deeper, more strategic analysis.
