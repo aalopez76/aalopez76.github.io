@@ -3,7 +3,7 @@ layout: page
 title: SQL Queries
 description: Extracting data for a business dashboard
 img: assets/img/sql.png
-importance: 3
+importance: 2
 category: Personal
 ---
 
@@ -12,7 +12,7 @@ This project focuses on building a dashboard to gain a comprehensive overview of
 
 The database schema is as follows: 
 
-<div class="row justify-content-center"> <div class="col-md-10 mt-3 mt-md-0 text-center"> {% include figure.liquid loading="eager" path="assets/img/toys_and_models-db.png" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row justify-content-center"> <div class="col-md-12 mt-3 mt-md-0 text-center"> {% include figure.liquid loading="eager" path="assets/img/toys_and_models-db.png" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 <div class="caption text-center"> The database schema.
