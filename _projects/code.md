@@ -24,6 +24,7 @@ Our goal is to extract the necessary data, starting with fundamental questions a
 - **Table Exploration**: Identify the available tables and the variables they contain.
 - **Business Overview**: Quantify the total number of customers, products, and employees.
 - **Customer Financial Profile**: Analyze the average, maximum, and minimum credit limit of customers.
+  (Note that the jupyter notebook ONLY supports light theme.)
 
 {::nomarkdown}
 {% assign jupyter_path = "assets/jupyter/Exploration.ipynb" | relative_url %}
@@ -60,6 +61,17 @@ Our goal is to extract the necessary data, starting with fundamental questions a
 - **Detailed Product Analysis**: Conduct a deep evaluation of a specific product's performance using advanced metrics.
 - **Organizational Mapping**: Visualize the company's hierarchy to understand the command structure.
 
+{::nomarkdown}
+{% assign jupyter_path = "assets/jupyter/Strategic.ipynb" | relative_url %}
+{% capture notebook_exists %}{% file_exists assets/jupyter/Strategic.ipynb %}{% endcapture %}
+{% if notebook_exists == "true" %}
+{% jupyter_notebook jupyter_path %}
+{% else %}
+
+<p>Sorry, the notebook you are looking for does not exist.</p>
+{% endif %}
+{:/nomarkdown}
+
 ### Phase 4: Consolidation and Visualization (Dashboard)
 With the extracted data, a dashboard will be built to visualize the findings. The queries will be grouped into thematic panels:
 
@@ -86,4 +98,4 @@ With the extracted data, a dashboard will be built to visualize the findings. Th
 {% endif %}
 {:/nomarkdown}
 
-Note that the jupyter notebook ONLY supports light theme.
+
