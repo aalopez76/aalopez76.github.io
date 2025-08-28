@@ -22,6 +22,8 @@ Our goal is to extract the necessary data, starting with fundamental questions a
 
 ### Phase 1: Descriptive Schema (Fundamental Queries)
 - **Table Exploration**: Identify the available tables and the variables they contain.
+- **Business Overview**: Quantify the total number of customers, products, and employees.
+- **Customer Financial Profile**: Analyze the average, maximum, and minimum credit limit of customers.
 
 {::nomarkdown}
 {% assign jupyter_path = "assets/jupyter/Exploration.ipynb" | relative_url %}
@@ -33,9 +35,6 @@ Our goal is to extract the necessary data, starting with fundamental questions a
 <p>Sorry, the notebook you are looking for does not exist.</p>
 {% endif %}
 {:/nomarkdown}
-  
-- **Business Overview**: Quantify the total number of customers, products, and employees.
-- **Customer Financial Profile**: Analyze the average, maximum, and minimum credit limit of customers.
 
 
 
