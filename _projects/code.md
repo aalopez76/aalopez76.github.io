@@ -54,8 +54,8 @@ With the extracted data, a dashboard will be built to visualize the findings. Th
 * Classification of performance and organizational structure.
 
 {::nomarkdown}
-{% assign jupyter_path = "assets/jupyter/blog.ipynb" | relative_url %}
-{% capture notebook_exists %}{% file_exists assets/jupyter/blog.ipynb %}{% endcapture %}
+{% assign jupyter_path = "assets/jupyter/Queries.ipynb" | relative_url %}
+{% capture notebook_exists %}{% file_exists assets/jupyter/Queries.ipynb %}{% endcapture %}
 {% if notebook_exists == "true" %}
 {% jupyter_notebook jupyter_path %}
 {% else %}
