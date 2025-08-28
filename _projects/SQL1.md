@@ -3,7 +3,7 @@ layout: page
 title: SQL Queries
 description: Extracting data for a business dashboard
 img: assets/img/sql.png
-importance: 2
+importance: 3
 category: Personal
 ---
 
