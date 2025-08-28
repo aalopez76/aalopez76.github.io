@@ -12,7 +12,7 @@ This project focuses on building a dashboard to gain a comprehensive overview of
 
 The database schema is as follows: 
 
-<div class="row justify-content-center"> <div class="col-md-12 mt-3 mt-md-0 text-center"> {% include figure.liquid loading="eager" path="assets/img/toys_and_models-db.png" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row justify-content-center"> <div class="col-md-20 mt-3 mt-md-0 text-center"> {% include figure.liquid loading="eager" path="assets/img/toys_and_models-db.png" title="example image" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 <div class="caption text-center"> The database schema.
@@ -22,8 +22,22 @@ Our goal is to extract the necessary data, starting with fundamental questions a
 
 ### Phase 1: Descriptive Schema (Fundamental Queries)
 - **Table Exploration**: Identify the available tables and the variables they contain.
+
+{::nomarkdown}
+{% assign jupyter_path = "assets/jupyter/Exploration.ipynb" | relative_url %}
+{% capture notebook_exists %}{% file_exists assets/jupyter/Exploration.ipynb %}{% endcapture %}
+{% if notebook_exists == "true" %}
+{% jupyter_notebook jupyter_path %}
+{% else %}
+
+<p>Sorry, the notebook you are looking for does not exist.</p>
+{% endif %}
+{:/nomarkdown}
+  
 - **Business Overview**: Quantify the total number of customers, products, and employees.
 - **Customer Financial Profile**: Analyze the average, maximum, and minimum credit limit of customers.
+
+
 
 ### Phase 2: Relational Analysis (JOINs and Aggregations)
 - **Sales Performance by Country**: Determine the sales volume generated in each country.
@@ -64,4 +78,4 @@ With the extracted data, a dashboard will be built to visualize the findings. Th
 {% endif %}
 {:/nomarkdown}
 
-Note that the jupyter notebook supports both light and dark themes.
+Note that the jupyter notebook ONLY supports light theme.
