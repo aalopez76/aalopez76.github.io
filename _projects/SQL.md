@@ -24,7 +24,7 @@ Our goal is to extract the necessary data, starting with fundamental questions a
 - **Table Exploration**: Identify the available tables and the variables they contain.
 - **Business Overview**: Quantify the total number of customers, products, and employees.
 - **Customer Financial Profile**: Analyze the average, maximum, and minimum credit limit of customers.
-  (Note that the jupyter notebook ONLY supports light theme.)
+  (Note: jupyter notebook ONLY supports light theme.)
 
 {::nomarkdown}
 {% assign jupyter_path = "assets/jupyter/Exploration.ipynb" | relative_url %}
@@ -42,6 +42,7 @@ Our goal is to extract the necessary data, starting with fundamental questions a
 - **Customer Distribution**: Map customers to their corresponding sales representatives to understand the workload of the sales force.
 - **Order Size**: Analyze the number of products per order to identify the average size and high-volume orders.
 - **Types of JOINs and Relationships**: Explore the connections between tables to understand relationships between customers and employees, as well as the internal staff hierarchy.
+(Note: jupyter notebook ONLY supports light theme.)
 
 {::nomarkdown}
 {% assign jupyter_path = "assets/jupyter/Relational.ipynb" | relative_url %}
@@ -60,6 +61,7 @@ Our goal is to extract the necessary data, starting with fundamental questions a
 - **Employee Performance**: Classify salespeople based on their sales to recognize top performers.
 - **Detailed Product Analysis**: Conduct a deep evaluation of a specific product's performance using advanced metrics.
 - **Organizational Mapping**: Visualize the company's hierarchy to understand the command structure.
+(Note: jupyter notebook ONLY supports light theme.)
 
 {::nomarkdown}
 {% assign jupyter_path = "assets/jupyter/Strategic.ipynb" | relative_url %}
