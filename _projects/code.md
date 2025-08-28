@@ -20,7 +20,7 @@ The database schema is as follows:
 
 Our goal is to extract the necessary data, starting with fundamental questions and then moving towards a deeper, more strategic analysis.
 
-### Phase 1: Descriptive Schema (Fundamental Queries)
+### Phase 1: Exploration Schema (Fundamental Queries)
 - **Table Exploration**: Identify the available tables and the variables they contain.
 - **Business Overview**: Quantify the total number of customers, products, and employees.
 - **Customer Financial Profile**: Analyze the average, maximum, and minimum credit limit of customers.
@@ -36,13 +36,22 @@ Our goal is to extract the necessary data, starting with fundamental questions a
 {% endif %}
 {:/nomarkdown}
 
-
-
 ### Phase 2: Relational Analysis (JOINs and Aggregations)
 - **Sales Performance by Country**: Determine the sales volume generated in each country.
 - **Customer Distribution**: Map customers to their corresponding sales representatives to understand the workload of the sales force.
 - **Order Size**: Analyze the number of products per order to identify the average size and high-volume orders.
 - **Types of JOINs and Relationships**: Explore the connections between tables to understand relationships between customers and employees, as well as the internal staff hierarchy.
+
+{::nomarkdown}
+{% assign jupyter_path = "assets/jupyter/Relational.ipynb" | relative_url %}
+{% capture notebook_exists %}{% file_exists assets/jupyter/Relational.ipynb %}{% endcapture %}
+{% if notebook_exists == "true" %}
+{% jupyter_notebook jupyter_path %}
+{% else %}
+
+<p>Sorry, the notebook you are looking for does not exist.</p>
+{% endif %}
+{:/nomarkdown}
 
 ### Phase 3: Strategic Analysis (Subqueries and Window Functions)
 - **Product Classification**: Identify the top-selling products to highlight the "star products".
