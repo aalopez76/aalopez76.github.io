@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SQL Queries
-description: Extracting data for a business dashboard
+description: Business dashboard
 img: assets/img/sql.png
 importance: 2
 category: Personal
@@ -14,7 +14,7 @@ The database schema is as follows:
 
 <div class="row justify-content-center">
     <div class="col-md-12 mt-3 mt-md-0 text-center">
-        {% include figure.liquid loading="eager" path="assets/img/toys_and_models-db.png" title="example image" class="img-fluid rounded z-depth-1" style="max-width: 150%; width: 150%;" %}
+        {% include figure.liquid loading="eager" path="assets/img/toys_and_models-db.png" title="example image" class="img-fluid rounded z-depth-1" style="max-width: 350%; width: 350%;" %}
     </div>
 </div>
 <div class="caption text-center">
