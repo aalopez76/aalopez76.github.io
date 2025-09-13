@@ -12,10 +12,13 @@ This project focuses on building a dashboard to gain a comprehensive overview of
 
 The database schema is as follows: 
 
-<div class="row justify-content-center"> <div class="col-md-12 mt-3 mt-md-0 text-center"> {% include figure.liquid loading="eager" path="assets/img/toys_and_models-db.png" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row justify-content-center">
+    <div class="col-md-12 mt-3 mt-md-0 text-center">
+        {% include figure.liquid loading="eager" path="assets/img/toys_and_models-db.png" title="example image" class="img-fluid rounded z-depth-1" style="max-width: 150%; width: 150%;" %}
+    </div>
 </div>
-</div>
-<div class="caption text-center"> The database schema.
+<div class="caption text-center">
+    The database schema.
 </div>
 
 Our goal is to extract the necessary data, starting with fundamental questions and then moving towards a deeper, more strategic analysis.
