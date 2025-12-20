@@ -47,7 +47,7 @@ The database schema is as follows:
 
 Our goal is to extract the necessary data, starting with fundamental questions and then moving towards a deeper, more strategic analysis.
 
-### Phase 1: Descriptive Schema 
+### Phase 1: Descriptive/Data Quality Schema 
 This module contains a set of SQL queries designed to explore, profile, and understand the *Toys & Models (Classic Models)* commercial database , helps answer key business questions:
 
 - What is the structure and distribution of the dataset?
