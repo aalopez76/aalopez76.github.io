@@ -64,7 +64,7 @@ A full set of data quality checks (nulls, duplicates, FK integrity, hierarchy in
 - Payment coverage: 68% of sales backed by payments
 
 ### SQL Analytics Framework
-[![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-lightgrey?logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-blue?logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main)
 
 The SQL queries used for exploration, cleaning, analysis, and modeling are organized in:
 
@@ -226,7 +226,8 @@ Actionable insights derived from SQL analytics:
 
 
 ### Explore the Code
-View Full SQL Repository on [![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-blue?logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main)
+View Full SQL Repository on [![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-lightgrey?logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main)
+
 The repository contains:
 
 - 50+ production-grade SQL queries across 5 analytical layers
@@ -239,7 +240,8 @@ The repository contains:
 ### Related Projects
 
 - Executive Dashboard
-[![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-green&logo=github)](https://github.com/aalopez76/Executive_Dashboard)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-lightgrey?logo=github)](https://github.com/aalopez76/Executive_Dashboard)
+
 Interactive Vizro dashboard powered by these SQL queries, featuring:
 
 - 5 pages (Executive, Regional, Risks, Opportunities, Deep Dive)
@@ -249,6 +251,7 @@ Interactive Vizro dashboard powered by these SQL queries, featuring:
 
 - SQL Connection Module 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-brightgreen&logo=github)](https://github.com/aalopez76/SQL-Connection-Module)
+
 Enterprise-level multi-engine database connector supporting:
 
 - SQLite, PostgreSQL, MySQL, SQL Server, Oracle, Snowflake, Redshift
