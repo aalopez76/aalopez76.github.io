@@ -229,7 +229,7 @@ The repository contains:
 ### Related Projects
 
 Executive Dashboard
-[![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-green&logo=github)](https://github.com/aalopez76/SQL-Connection-Module)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-green&logo=github)](https://github.com/aalopez76/Executive_Dashboard)
 Interactive Vizro dashboard powered by these SQL queries, featuring:
 
 - 5 pages (Executive, Regional, Risks, Opportunities, Deep Dive)
