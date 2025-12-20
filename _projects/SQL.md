@@ -75,8 +75,6 @@ The SQL queries used for exploration, cleaning, analysis, and modeling are organ
 
 Each module contains production-grade SQL with documentation, window functions, CTEs, recursive queries, advanced aggregations, and business logic embedded directly in SQL.
 
-# Classic Models Sales Analytics Dashboard
-
 [![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-blue?logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main)
 
 Phase 1: Descriptive/Data Quality — "What is happening?"
@@ -90,16 +88,16 @@ Foundation analytics answering core business questions:
 
 Sample Queries:
 
-01_table_exploration.sql - Database schema discovery
+[![01_table_exploration.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/descriptive/.sql/01_table_exploration.sql)- Database schema discovery
 05_sales_by_country.sql - Geographic revenue breakdown
 07_order_size_unique_products.sql - Order complexity analysis
 
 Data Quality Results:
 
-✅ 8 tables with 4,000+ total records validated
-⚠️ 2.1% records excluded due to missing rep assignments
-✅ Referential integrity: 99.8% FK match rate
-✅ Temporal consistency: All orders within 2003-2005 range
+- 8 tables with 4,000+ total records validated
+- 2.1% records excluded due to missing rep assignments
+- Referential integrity: 99.8% FK match rate
+- Temporal consistency: All orders within 2003-2005 range
 
 ### Phase 1: Descriptive/Data Quality Schema 
 This module contains a set of SQL queries designed to explore, profile, and understand the *Toys & Models (Classic Models)* commercial database , helps answer key business questions:
