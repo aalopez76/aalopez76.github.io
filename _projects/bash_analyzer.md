@@ -18,4 +18,4 @@ Among its features are:
 
   ![App]({{ site.baseurl }}/assets/img/app.png)
 
-You can explore the full source code and detailed instructions on my [![GitHub Repo](https://github.com/aalopez76/bash-analyzer).
+You can explore the full source code and detailed instructions on my[![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-red?logo=github)](https://github.com/aalopez76/bash-analyzer).
