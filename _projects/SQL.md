@@ -65,7 +65,7 @@ A full set of data quality checks (nulls, duplicates, FK integrity, hierarchy in
 - Payment coverage: 68% of sales backed by payments
 
 ### SQL Analytics Framework
-[![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-blue?logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-lightgrey?logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main)
 
 The SQL queries used for exploration, cleaning, analysis, and modeling are organized in:
 
@@ -181,66 +181,69 @@ Predictive Outputs:
 - Demand Trends: 15% SKUs growing, 8% declining, 77% stable
 - Cross-Sell: 45 product pairs with lift >5 (12 pairs with lift >10)
 
-----
+Phase 5: Structural — "How is the system organized?"
+Organizational hierarchy and coverage mapping:
+This module is not about performance or KPIs. It focuses on relationships, hierarchies, and structural layout:
 
-### Phase 1: Descriptive/Data Quality Schema 
-This module contains a set of SQL queries designed to explore, profile, and understand the *Toys & Models (Classic Models)* commercial database , helps answer key business questions:
+- Employee Hierarchy: 3-level management chain (recursive CTE traversal)
+- Office-Territory Mapping: 7 offices across USA, Europe, APAC
+- Sales Coverage: Office → Rep → Customer mapping
+- Capacity Analysis: Employees per office, customers per territory
 
-- What is the structure and distribution of the dataset?
-- How large are the tables, and how are they related?
-- What is the credit profile of customers?
-- Which markets generate the highest sales volume?
-- How many customers does each representative manage, and how are they distributed?
-- Which orders stand out due to size or value, and what products do they include?
-- How do orders contribute to the organization’s overall performance?
+Sample Queries:
 
-### Phase 2: Diagnostic Schema
+[01_employee_hierarchy_recursive.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/structural/.sql/01_employee_hierarchy_recursive.sql) - Recursive CTE for reporting chains
+[04_org_sales_coverage_map.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/structural/.sql/04_org_sales_coverage_map.sql) - End-to-end coverage view
+[03_office_region_structure.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/structural/.sql/03_office_region_structure.sql) - Geographic footprint analysis
 
-This module contains diagnostic SQL queries designed to identify anomalies, outliers, and operational misalignments within the business. Its goal is to highlight patterns that may require:
+Structural Insights:
 
-- credit policy review
-- risk assessment
-- commercial intervention
-- financial oversight.
+- 7 offices: San Francisco (HQ), Paris, Tokyo, Sydney, London, Boston, NYC
+- 23 employees: 17 sales reps, 6 managers (President → VP Sales → Managers → Reps)
+- Territory coverage: USA (4 offices), Europe (2), APAC (1)
+- Capacity: Paris office (6 reps, 35 customers), Tokyo (2 reps, 8 customers)
 
-While the descriptive and analytical modules explain what is happening and why, this diagnostic module focuses on what should not be happening, what deviates from expected behavior, and which cases warrant immediate attention.
+Business Impact
+Actionable insights derived from SQL analytics:
 
-### Phase 3: Analytical Schema
-
-This module contains queries designed to deepen business understanding through trends, patterns, comparative analysis, and performance metrics.
-
-While *descriptive schema* answers **what is happening**, this module answers **why it is happening** and what factors explain the behavior observed.
-
-The queries leverage:
-
-- Window functions
-- Hierarchical CTEs
-- Rolling averages
-- MoM and YoY comparisons
-- ABC segmentation
-- Multidimensional KPIs
-- Geographic, portfolio, customer, and salesforce analytics
+1. Credit Risk Mitigation: Identified $267K at risk across 18 accounts with misaligned credit policies → Immediate policy review initiated
+2. Revenue Opportunity: $50K+ growth potential by increasing credit for 6 under-credited high-performers → Credit increase proposals drafted
+3. Churn Prevention: 14 customers flagged for proactive outreach (60% reactivation target) → Automated email campaign triggered
+4. Inventory Optimization: Q4 demand spike detected via time-series analysis → Enabled +15% stock adjustment in Nov-Dec
+5. Sales Rebalancing: Top rep manages 14 customers while 3 reps have <5 each → Redistribution plan proposed to improve coverage
+6. Cross-Sell Strategy: 12 product pairs with lift >10 identified → Bundled promotion campaign designed for Q1 launch
+7. Geographic Expansion: Bottom-quartile countries contributing <1% each → Targeted marketing budget allocated to APAC growth markets
 
 
-### Phase 4: Predictive Schema
- Unlike the descriptive (“What is happening?”) and analytical (“Why is it happening?”) modules, the predictive layer focuses on:
+### Explore the Code
+View Full SQL Repository on [![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-blue?logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main)
+The repository contains:
 
-anticipating future behavior
-deriving forward-looking indicators
-identifying early trends
-producing features useful for forecasting and recommendation systems.
+- 50+ production-grade SQL queries across 5 analytical layers
+- Inline documentation with business context and logic explanation
+- Sample outputs and interpretation notes
+- Query images showing execution results (view examples)
+- Integration notes for BI tools (Tableau, Power BI, Looker)
+- Performance tips for optimization
 
-### Phase 5: Structural Schema
-This module focuses on the organizational and structural layout of the Classic Models dataset. The Structural module answers:
+### Related Projects
 
-“How is the system (organization + geography + coverage) structured?”
+Executive Dashboard
+[![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-green&logo=github)](https://github.com/aalopez76/SQL-Connection-Module)
+Interactive Vizro dashboard powered by these SQL queries, featuring:
 
-The queries in this folder are not about performance or KPIs. They are about relationships, hierarchies, and coverage mapping across:
+- 5 pages (Executive, Regional, Risks, Opportunities, Deep Dive)
+- Real-time KPIs with YoY comparisons
+- Interactive maps and click-to-filter actions
+- AG Grid tables with conditional formatting
 
--employees and managers
--organizational hierarchy
--offices and territories
--sales representatives and their customers.
+SQL Connection Module 
+[![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-brightgreen&logo=github)](https://github.com/aalopez76/SQL-Connection-Module)
+Enterprise-level multi-engine database connector supporting:
+
+- SQLite, PostgreSQL, MySQL, SQL Server, Oracle, Snowflake, Redshift
+- Unified OOP API for connection management
+- Production-ready with context managers and error handling
 
 
 
