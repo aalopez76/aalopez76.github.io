@@ -101,6 +101,88 @@ Data Quality Results:
 - Referential integrity: 99.8% FK match rate
 - Temporal consistency: All orders within 2003-2005 range
 
+Phase 2: Diagnostic — "What went wrong? What stands out?"
+Anomaly detection and operational risk identification:
+This module focuses on what should not be happening, deviations from expected behavior, and cases requiring immediate attention:
+
+- High-Risk Customers: Credit/sales misalignment detection (ratio >2:1)
+- Geographic Anomalies: Countries with high credit allocation but low sales realization
+- Credit Policy Gaps: Over-credited accounts (12) and under-credited growth opportunities (6)
+- Recency Risk: Customers inactive >180 days flagged for churn prevention
+- Outlier Detection: Bottom 5% and top 5% credit assignments via percentile analysis
+
+Sample Queries:
+
+[04_high_risk_customers_ratio.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/diagnostic/.sql/04_high_risk_customers_ratio.sql) - Combined credit + recency risk model
+[03_credit_vs_sales_misalignment_ratio.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/diagnostic/.sql/03_credit_vs_sales_misalignment_ratio.sql) - 2:1 ratio threshold classification
+[01_geographic_credit_anomalies.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/diagnostic/.sql/01_geographic_credit_anomalies.sql) - Country-level credit vs. sales analysis
+
+Diagnostic Results:
+
+- 18 high-risk customers with 267K at risk
+- 12 over-credited accounts with avg $85K unused credit
+- 6 under-credited accounts with growth potential ($50K+ opportunity)
+- 14 stale customers (>180 days inactive, $185K historical revenue)
+
+Phase 3: Analytical — "Why is it happening?"
+Deep dives through trends, patterns, and comparative analysis:
+While descriptive answers what is happening, analytical answers why and what factors explain observed behavior.
+Key Techniques:
+
+- Window Functions: ROW_NUMBER(), RANK(), NTILE() for percentile analysis
+- Time-Series: MoM/YoY comparisons, 3-month rolling averages
+- ABC Segmentation: Pareto analysis (70/20/10 rule) for customers, products, sales reps
+- Geographic Analysis: Regional vs. global sales contribution, within-region ranking
+- Salesforce Performance: Customer count, territory coverage, average ticket analysis
+
+Sample Queries:
+
+[03_customer_deep_agg_phase2.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/analytical/.sql/03_customer_deep_agg_phase2.sql) - Customer ABC classification with cumulative %
+[02_products_deep_agg.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/analytical/.sql/02_products_deep_agg.sql) - Product portfolio Pareto analysis
+[01_sales_by_country_vs_region.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/analytical/.sql/01_sales_by_country_vs_region.sql) - Multilevel geographic deep dive
+[04_salesrep_performance_deep_agg.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/analytical/.sql/04_salesrep_performance_deep_agg.sql) - 360° salesforce analysis
+
+Analytical Insights:
+
+- Customer ABC: A-tier (15 customers, 70% revenue), B-tier (24, 20%), C-tier (83, 10%)
+- Product Concentration: Top 10 SKUs drive 60%+ of revenue
+- Geographic Split: USA (28%), Spain (9%), France (8%), others <5% each
+- Rep Workload: Range 2-14 customers per rep (avg 5.3), uneven distribution
+
+Phase 4: Predictive — "What might happen next?"
+Forward-looking indicators and forecasting features:
+Unlike descriptive ("What?") and analytical ("Why?"), predictive focuses on:
+
+- Anticipating future behavior
+- Deriving forward-looking indicators
+- Identifying early trends
+- Producing features for ML models
+
+Advanced Techniques:
+
+Time-Series Features: Lag/lead indicators, monthly quartiles, demand trends
+RFM Scoring: Recency, Frequency, Monetary value segmentation (scale 3-15)
+Next-Order Prediction: Expected reorder dates based on inter-order gaps (avg 42 days)
+Cross-Sell Analysis: Product co-occurrence with support, confidence, lift metrics
+Demand Classification: Growing/Stable/Declining flags (±15% threshold)
+
+Sample Queries:
+
+[06_customer_rfm_score.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/predictive/.sql/06_customer_rfm_score.sql) - RFM segmentation for churn prediction
+[07_customer_next_order_prediction.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/predictive/.sql/07_customer_next_order_prediction.sql) - Expected order date calculation
+[08_product_cross_sell_pairs.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/predictive/.sql/08_product_cross_sell_pairs.sql) - Market basket analysis
+[05_product_demand_trend_flag.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/predictive/.sql/05_product_demand_trend_flag.sql) - Growth classification (3-month window)
+[01_company_monthly_timeseries.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/predictive/.sql/01_company_monthly_timeseries.sql) - Company-level KPIs by month
+
+Predictive Outputs:
+
+- RFM Segments: 22% Top-tier, 31% High, 28% Mid, 19% Low
+- Next Orders: 8 customers "Overdue" (>60 days expected), 14 "Due Soon"
+- Demand Trends: 15% SKUs growing, 8% declining, 77% stable
+- Cross-Sell: 45 product pairs with lift >5 (12 pairs with lift >10)
+
+----
+
 ### Phase 1: Descriptive/Data Quality Schema 
 This module contains a set of SQL queries designed to explore, profile, and understand the *Toys & Models (Classic Models)* commercial database , helps answer key business questions:
 
