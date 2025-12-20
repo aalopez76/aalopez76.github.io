@@ -269,7 +269,7 @@ The repository contains:
 
 ### Related Projects
 
-1. Executive Dashboard
+#### Executive Dashboard
 [![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-lightgrey?logo=github)](https://github.com/aalopez76/Executive_Dashboard)
 
 Interactive Vizro dashboard powered by these SQL queries, featuring:
@@ -279,7 +279,8 @@ Interactive Vizro dashboard powered by these SQL queries, featuring:
 - Interactive maps and click-to-filter actions
 - AG Grid tables with conditional formatting
 
-2. SQL Connection Module 
+
+#### SQL Connection Module 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-lightgrey?logo=github)](https://github.com/aalopez76/SQL-Connection-Module)
 
 Enterprise-level multi-engine database connector supporting:
