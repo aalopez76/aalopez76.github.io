@@ -34,7 +34,6 @@ Through 50+ production-grade SQL queries organized in 5 analytical layers, this 
 Our goal is to extract the necessary data, starting with fundamental questions and then moving towards a deeper, more strategic analysis.
 
 ### Data Structure & Schema
-
 The dataset contains detailed relational information on customers, products, orders, payments, offices, and employees.
 
 The database schema is: 
@@ -77,9 +76,7 @@ The SQL queries used for exploration, cleaning, analysis, and modeling are organ
 
 Each module contains production-grade SQL with documentation, window functions, CTEs, recursive queries, advanced aggregations, and business logic embedded directly in SQL.
 
-
-
-Phase 1: Descriptive/Data Quality — "What is happening?"
+### Phase 1: Descriptive/Data Quality — "What is happening?"
 Foundation analytics answering core business questions:
 
 - Structure & Distribution: Table dimensions, row counts, column profiling
@@ -91,7 +88,9 @@ Foundation analytics answering core business questions:
 Sample Queries:
 
 [01_table_exploration.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/descriptive/.sql/01_table_exploration.sql)- Database schema discovery
+
 [05_sales_by_country.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/descriptive/.sql/05_sales_by_country.sql) - Geographic revenue breakdown
+
 [07_order_size_unique_products.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/descriptive/.sql/07_order_size_unique_products.sql) - Order complexity analysis
 
 Data Quality Results:
@@ -101,7 +100,7 @@ Data Quality Results:
 - Referential integrity: 99.8% FK match rate
 - Temporal consistency: All orders within 2003-2005 range
 
-Phase 2: Diagnostic — "What went wrong? What stands out?"
+### Phase 2: Diagnostic — "What went wrong? What stands out?"
 Anomaly detection and operational risk identification:
 This module focuses on what should not be happening, deviations from expected behavior, and cases requiring immediate attention:
 
@@ -114,7 +113,9 @@ This module focuses on what should not be happening, deviations from expected be
 Sample Queries:
 
 [04_high_risk_customers_ratio.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/diagnostic/.sql/04_high_risk_customers_ratio.sql) - Combined credit + recency risk model
+
 [03_credit_vs_sales_misalignment_ratio.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/diagnostic/.sql/03_credit_vs_sales_misalignment_ratio.sql) - 2:1 ratio threshold classification
+
 [01_geographic_credit_anomalies.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/diagnostic/.sql/01_geographic_credit_anomalies.sql) - Country-level credit vs. sales analysis
 
 Diagnostic Results:
@@ -124,7 +125,7 @@ Diagnostic Results:
 - 6 under-credited accounts with growth potential ($50K+ opportunity)
 - 14 stale customers (>180 days inactive, $185K historical revenue)
 
-Phase 3: Analytical — "Why is it happening?"
+### Phase 3: Analytical — "Why is it happening?"
 Deep dives through trends, patterns, and comparative analysis:
 While descriptive answers what is happening, analytical answers why and what factors explain observed behavior.
 Key Techniques:
@@ -138,8 +139,11 @@ Key Techniques:
 Sample Queries:
 
 [03_customer_deep_agg_phase2.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/analytical/.sql/03_customer_deep_agg_phase2.sql) - Customer ABC classification with cumulative %
+
 [02_products_deep_agg.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/analytical/.sql/02_products_deep_agg.sql) - Product portfolio Pareto analysis
+
 [01_sales_by_country_vs_region.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/analytical/.sql/01_sales_by_country_vs_region.sql) - Multilevel geographic deep dive
+
 [04_salesrep_performance_deep_agg.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/analytical/.sql/04_salesrep_performance_deep_agg.sql) - 360° salesforce analysis
 
 Analytical Insights:
@@ -149,7 +153,7 @@ Analytical Insights:
 - Geographic Split: USA (28%), Spain (9%), France (8%), others <5% each
 - Rep Workload: Range 2-14 customers per rep (avg 5.3), uneven distribution
 
-Phase 4: Predictive — "What might happen next?"
+### Phase 4: Predictive — "What might happen next?"
 Forward-looking indicators and forecasting features:
 Unlike descriptive ("What?") and analytical ("Why?"), predictive focuses on:
 
@@ -169,9 +173,13 @@ Demand Classification: Growing/Stable/Declining flags (±15% threshold)
 Sample Queries:
 
 [06_customer_rfm_score.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/predictive/.sql/06_customer_rfm_score.sql) - RFM segmentation for churn prediction
+
 [07_customer_next_order_prediction.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/predictive/.sql/07_customer_next_order_prediction.sql) - Expected order date calculation
+
 [08_product_cross_sell_pairs.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/predictive/.sql/08_product_cross_sell_pairs.sql) - Market basket analysis
+
 [05_product_demand_trend_flag.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/predictive/.sql/05_product_demand_trend_flag.sql) - Growth classification (3-month window)
+
 [01_company_monthly_timeseries.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/predictive/.sql/01_company_monthly_timeseries.sql) - Company-level KPIs by month
 
 Predictive Outputs:
@@ -181,7 +189,7 @@ Predictive Outputs:
 - Demand Trends: 15% SKUs growing, 8% declining, 77% stable
 - Cross-Sell: 45 product pairs with lift >5 (12 pairs with lift >10)
 
-Phase 5: Structural — "How is the system organized?"
+### Phase 5: Structural — "How is the system organized?"
 Organizational hierarchy and coverage mapping:
 This module is not about performance or KPIs. It focuses on relationships, hierarchies, and structural layout:
 
@@ -193,7 +201,9 @@ This module is not about performance or KPIs. It focuses on relationships, hiera
 Sample Queries:
 
 [01_employee_hierarchy_recursive.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/structural/.sql/01_employee_hierarchy_recursive.sql) - Recursive CTE for reporting chains
+
 [04_org_sales_coverage_map.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/structural/.sql/04_org_sales_coverage_map.sql) - End-to-end coverage view
+
 [03_office_region_structure.sql](https://github.com/aalopez76/SQL-Queries/blob/main/queries/structural/.sql/03_office_region_structure.sql) - Geographic footprint analysis
 
 Structural Insights:
@@ -203,7 +213,7 @@ Structural Insights:
 - Territory coverage: USA (4 offices), Europe (2), APAC (1)
 - Capacity: Paris office (6 reps, 35 customers), Tokyo (2 reps, 8 customers)
 
-Business Impact
+### Business Impact
 Actionable insights derived from SQL analytics:
 
 1. Credit Risk Mitigation: Identified $267K at risk across 18 accounts with misaligned credit policies → Immediate policy review initiated
@@ -228,7 +238,7 @@ The repository contains:
 
 ### Related Projects
 
-Executive Dashboard
+- Executive Dashboard
 [![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-green&logo=github)](https://github.com/aalopez76/Executive_Dashboard)
 Interactive Vizro dashboard powered by these SQL queries, featuring:
 
@@ -237,7 +247,7 @@ Interactive Vizro dashboard powered by these SQL queries, featuring:
 - Interactive maps and click-to-filter actions
 - AG Grid tables with conditional formatting
 
-SQL Connection Module 
+- SQL Connection Module 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-brightgreen&logo=github)](https://github.com/aalopez76/SQL-Connection-Module)
 Enterprise-level multi-engine database connector supporting:
 
