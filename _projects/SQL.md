@@ -76,22 +76,24 @@ The SQL queries used for exploration, cleaning, analysis, and modeling are organ
 
 Each module contains production-grade SQL with documentation, window functions, CTEs, recursive queries, advanced aggregations, and business logic embedded directly in SQL.
 
-Raw Tables (SQLite)          SQL Analytics Layer              Dashboard Layer
-─────────────────            ───────────────────              ───────────────
-┌─────────────┐              ┌──────────────┐               ┌──────────────┐
-│ customers   │──┐           │ Descriptive  │──┐            │ Executive    │
-│ orders      │  │           │ (What?)      │  │            │ View         │
-│ orderdetails│  ├──────────▶│              │  │            ├──────────────┤
-│ products    │  │           │ Analytical   │  │            │ Regional     │
-│ employees   │  │           │ (Why?)       │  ├───────────▶│ View         │
-│ payments    │  │           │              │  │            ├──────────────┤
-│ offices     │  │           │ Diagnostic   │  │            │ Risks &      │
-│ productlines│──┘           │ (What wrong?)│  │            │ Diagnostics  │
-└─────────────┘              │              │  │            ├──────────────┤
-                             │ Predictive   │  │            │ Opportunities│
-                             │ (What next?) │──┘            ├──────────────┤
-                             └──────────────┘               │ Deep Dive    │
-                                                            └──────────────┘
+```text
+Raw Tables (SQLite)           SQL Analytics Layer              Dashboard Layer
+─────────────────             ───────────────────              ───────────────
+┌─────────────┐               ┌──────────────┐               ┌──────────────┐
+│ customers   │──┐            │ Descriptive  │──┐            │ Executive    │
+│ orders      │  │            │ (What?)      │  │            │ View         │
+│ orderdetails│  ├───────────▶│              │  │            ├─────────────┤
+│ products    │  │            │ Analytical   │  │            │ Regional     │
+│ employees   │  │            │ (Why?)       │  ├───────────▶│ View        │
+│ payments    │  │            │              │  │            ├──────────────┤
+│ offices     │  │            │ Diagnostic   │  │            │ Risks &amp;  │
+│ productlines│──┘            │ (What wrong?)│  │            │ Diagnostics  │
+└─────────────┘               │              │  │            ├──────────────┤
+                              │ Predictive   │  │            │ Opportunities│
+                              │ (What next?) │──┘            ├──────────────┤
+                              └──────────────┘               │ Deep Dive    │
+                                                             └──────────────┘
+```
                                                             
 
 ### Phase 1: Descriptive/Data Quality — "What is happening?"
@@ -138,7 +140,7 @@ Sample Queries:
 
 01_geographic_credit_anomalies.sql - Country-level credit vs. sales analysis
 
-[![EXPLORE PHASE 2 QUERIES](https://img.shields.io/badge/Explore_All_Phase_1_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/diagnostic/.sql)
+[![EXPLORE PHASE 2 QUERIES](https://img.shields.io/badge/Explore_All_Phase_2_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/diagnostic/.sql)
 
 Diagnostic Results:
 
@@ -168,7 +170,7 @@ Sample Queries:
 
 04_salesrep_performance_deep_agg.sql - 360° salesforce analysis
 
-[![EXPLORE PHASE 3 QUERIES](https://img.shields.io/badge/Explore_All_Phase_1_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/analytical/.sql)
+[![EXPLORE PHASE 3 QUERIES](https://img.shields.io/badge/Explore_All_Phase_3_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/analytical/.sql)
 
 Analytical Insights:
 
@@ -206,7 +208,7 @@ Sample Queries:
 
 01_company_monthly_timeseries.sql - Company-level KPIs by month
 
-[![EXPLORE PHASE 4 QUERIES](https://img.shields.io/badge/Explore_All_Phase_1_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/predictive/.sql)
+[![EXPLORE PHASE 4 QUERIES](https://img.shields.io/badge/Explore_All_Phase_4_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/predictive/.sql)
 
 Predictive Outputs:
 
@@ -232,7 +234,7 @@ Sample Queries:
 
 03_office_region_structure.sql - Geographic footprint analysis
 
-[![EXPLORE PHASE 5 QUERIES](https://img.shields.io/badge/Explore_All_Phase_1_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/structural/.sql)
+[![EXPLORE PHASE 5 QUERIES](https://img.shields.io/badge/Explore_All_Phase_5_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/structural/.sql)
 
 Structural Insights:
 
@@ -267,7 +269,7 @@ The repository contains:
 
 ### Related Projects
 
-- Executive Dashboard
+1. Executive Dashboard
 [![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-lightgrey?logo=github)](https://github.com/aalopez76/Executive_Dashboard)
 
 Interactive Vizro dashboard powered by these SQL queries, featuring:
@@ -277,8 +279,8 @@ Interactive Vizro dashboard powered by these SQL queries, featuring:
 - Interactive maps and click-to-filter actions
 - AG Grid tables with conditional formatting
 
-- SQL Connection Module 
-[![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-brightgreen&logo=github)](https://github.com/aalopez76/SQL-Connection-Module)
+2. SQL Connection Module 
+[![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-lightgrey?logo=github)](https://github.com/aalopez76/SQL-Connection-Module)
 
 Enterprise-level multi-engine database connector supporting:
 
