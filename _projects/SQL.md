@@ -9,6 +9,7 @@ category: Personal
 
 ### Project Summary
 This project analyzes the operational, commercial, and organizational performance of Toys & Models Co., a global distributor of collectible scale models.
+
 The analysis is performed entirely with SQL, following a professional multi-layer analytics framework.
 
 The company operates across North America, Europe, and APAC, maintaining:
@@ -19,22 +20,24 @@ The company operates across North America, Europe, and APAC, maintaining:
 - Multi-stage order processing
 - Credit- and payment-dependent workflows.
 
-The SQL queries used for exploration, cleaning, analysis, and modeling are organized in:
+### Key Insights Delivered
+Through 50+ production-grade SQL queries organized in 5 analytical layers, this project uncovers:
 
-- descriptive/data quality (what is happening/Completeness, Uniqueness & Referential Integrity) — data exploration, KPIs, completeness, uniqueness, and integrity checks
-- analytical (Why is it happening?) — deep dives by country, region, product, customer, and sales rep
-- diagnostic (What went wrong / stands out?) — anomaly detection, outliers, misalignment, and risk analysis
-- predictive (What might happen next?) — RFM scoring, demand trends, next-order estimation, time-series features, cross-sell
-- structural (How is the system organized?) — organizational hierarchy, office–territory mapping, coverage structure
+- Revenue Concentration
+- Risk Detection
+- Demand Patterns
+- Cross-Sell Opportunities
+- Churn Prediction
+- Geographic Imbalance
+- Operational Excellence
 
-Each module contains production-grade SQL with documentation, window functions, CTEs, recursive queries, advanced aggregations, and business logic embedded directly in SQL.
+Our goal is to extract the necessary data, starting with fundamental questions and then moving towards a deeper, more strategic analysis.
 
-## Data Structure & Initial Checks
+### Data Structure & Schema
 
 The dataset contains detailed relational information on customers, products, orders, payments, offices, and employees.
-A full set of data quality checks (nulls, duplicates, FK integrity, hierarchy integrity) confirms the dataset is well-structured with a few minor issues (e.g., missing rep assignments, orphan order details).
 
-The database schema is as follows: 
+The database schema is: 
 
 <div class="row justify-content-center">
     <div class="col-md-12 mt-3 mt-md-0 text-center">
@@ -45,7 +48,58 @@ The database schema is as follows:
     The database schema.
 </div>
 
-Our goal is to extract the necessary data, starting with fundamental questions and then moving towards a deeper, more strategic analysis.
+Database Summary:
+
+- 2,994 order details across 326 orders
+- 122 customers with credit profiles
+- 23 employees in 7 offices
+- 110 products across 7 product lines
+- 273 payments tracked
+- 27 countries served
+
+A full set of data quality checks (nulls, duplicates, FK integrity, hierarchy integrity) confirms the dataset is well-structured with minor issues:
+
+- 2.1% records with missing sales rep assignments
+- 6 orphan orderdetails (FK violations)
+- No duplicate primary keys detected
+- Payment coverage: 68% of sales backed by payments
+
+### SQL Analytics Framework
+The SQL queries used for exploration, cleaning, analysis, and modeling are organized in:
+
+- descriptive/data quality (what is happening/Completeness, Uniqueness & Referential Integrity) — data exploration, KPIs, completeness, uniqueness, and integrity checks
+- analytical (Why is it happening?) — deep dives by country, region, product, customer, and sales rep
+- diagnostic (What went wrong / stands out?) — anomaly detection, outliers, misalignment, and risk analysis
+- predictive (What might happen next?) — RFM scoring, demand trends, next-order estimation, time-series features, cross-sell
+- structural (How is the system organized?) — organizational hierarchy, office–territory mapping, coverage structure
+
+Each module contains production-grade SQL with documentation, window functions, CTEs, recursive queries, advanced aggregations, and business logic embedded directly in SQL.
+
+# Classic Models Sales Analytics Dashboard
+
+[![GitHub Repo](https://img.shields.io/badge/GitHub-View%20Repository-blue?logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main)
+
+Phase 1: Descriptive/Data Quality — "What is happening?"
+Foundation analytics answering core business questions:
+
+- Structure & Distribution: Table dimensions, row counts, column profiling
+- Credit Profiling: Min/max/avg credit limits ($13K - $227K range), utilization rates
+- Market Performance: Sales by country, ranking by volume, AOV analysis
+- Customer Coverage: Rep-to-customer mapping, portfolio size distribution
+- Order Analysis: High-value orders, product mix, unique SKUs per order
+
+Sample Queries:
+
+01_table_exploration.sql - Database schema discovery
+05_sales_by_country.sql - Geographic revenue breakdown
+07_order_size_unique_products.sql - Order complexity analysis
+
+Data Quality Results:
+
+✅ 8 tables with 4,000+ total records validated
+⚠️ 2.1% records excluded due to missing rep assignments
+✅ Referential integrity: 99.8% FK match rate
+✅ Temporal consistency: All orders within 2003-2005 range
 
 ### Phase 1: Descriptive/Data Quality Schema 
 This module contains a set of SQL queries designed to explore, profile, and understand the *Toys & Models (Classic Models)* commercial database , helps answer key business questions:
@@ -101,10 +155,10 @@ This module focuses on the organizational and structural layout of the Classic M
 
 The queries in this folder are not about performance or KPIs. They are about relationships, hierarchies, and coverage mapping across:
 
-employees and managers
-organizational hierarchy
-offices and territories
-sales representatives and their customers.
+-employees and managers
+-organizational hierarchy
+-offices and territories
+-sales representatives and their customers.
 
 
 
