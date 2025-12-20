@@ -77,22 +77,21 @@ The SQL queries used for exploration, cleaning, analysis, and modeling are organ
 Each module contains production-grade SQL with documentation, window functions, CTEs, recursive queries, advanced aggregations, and business logic embedded directly in SQL.
 
 ```text
-Raw Tables (SQLite)           SQL Analytics Layer              Dashboard Layer
-─────────────────             ───────────────────              ───────────────
-┌─────────────┐               ┌──────────────┐               ┌──────────────┐
-│ customers   │──┐            │ Descriptive  │──┐            │ Executive    │
-│ orders      │  │            │ (What?)      │  │            │ View         │
-│ orderdetails│  ├───────────▶│              │  │            ├─────────────┤
-│ products    │  │            │ Analytical   │  │            │ Regional     │
-│ employees   │  │            │ (Why?)       │  ├───────────▶│ View        │
-│ payments    │  │            │              │  │            ├──────────────┤
-│ offices     │  │            │ Diagnostic   │  │            │ Risks &amp;  │
-│ productlines│──┘            │ (What wrong?)│  │            │ Diagnostics  │
-└─────────────┘               │              │  │            ├──────────────┤
-                              │ Predictive   │  │            │ Opportunities│
-                              │ (What next?) │──┘            ├──────────────┤
-                              └──────────────┘               │ Deep Dive    │
-                                                             └──────────────┘
+Raw Tables (SQLite)           SQL Analytics Layer
+─────────────────             ───────────────────
+┌─────────────┐               ┌──────────────┐
+│ customers   │──┐            │ Descriptive  │
+│ orders      │  │            │ (What?)      │
+│ orderdetails│  ├───────────▶│              │
+│ products    │  │            │ Analytical   │
+│ employees   │  │            │ (Why?)       │
+│ payments    │  │            │              │
+│ offices     │  │            │ Diagnostic   │
+│ productlines│──┘            │ (What wrong?)│
+└─────────────┘               │              │
+                              │ Predictive   │
+                              │ (What next?) │
+                              └──────────────┘
 ```
                                                             
 
