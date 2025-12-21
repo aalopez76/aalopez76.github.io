@@ -107,12 +107,10 @@ Foundation analytics answering core business questions:
 Sample Queries:
 
 01_table_exploration.sql]- Database schema discovery
-
 05_sales_by_country.sql- Geographic revenue breakdown
-
 07_order_size_unique_products.sql- Order complexity analysis
 
-[![EXPLORE PHASE 1 QUERIES](https://img.shields.io/badge/Explore_All_Phase_1_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/descriptive/.sql)
+[![EXPLORE PHASE 1 QUERIES](https://img.shields.io/badge/Explore_All_Phase_1_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/descriptive)
 
 Data Quality Results:
 
@@ -134,12 +132,10 @@ This module focuses on what should not be happening, deviations from expected be
 Sample Queries:
 
 04_high_risk_customers_ratio.sql]- Combined credit + recency risk model
-
 03_credit_vs_sales_misalignment_ratio.sql - 2:1 ratio threshold classification
-
 01_geographic_credit_anomalies.sql - Country-level credit vs. sales analysis
 
-[![EXPLORE PHASE 2 QUERIES](https://img.shields.io/badge/Explore_All_Phase_2_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/diagnostic/.sql)
+[![EXPLORE PHASE 2 QUERIES](https://img.shields.io/badge/Explore_All_Phase_2_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/diagnostic)
 
 Diagnostic Results:
 
@@ -162,14 +158,11 @@ Key Techniques:
 Sample Queries:
 
 03_customer_deep_agg_phase2.sql - Customer ABC classification with cumulative %
-
 02_products_deep_agg.sql - Product portfolio Pareto analysis
-
 01_sales_by_country_vs_region.sql - Multilevel geographic deep dive
-
 04_salesrep_performance_deep_agg.sql - 360° salesforce analysis
 
-[![EXPLORE PHASE 3 QUERIES](https://img.shields.io/badge/Explore_All_Phase_3_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/analytical/.sql)
+[![EXPLORE PHASE 3 QUERIES](https://img.shields.io/badge/Explore_All_Phase_3_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/analytical)
 
 Analytical Insights:
 
@@ -198,16 +191,12 @@ Demand Classification: Growing/Stable/Declining flags (±15% threshold)
 Sample Queries:
 
 06_customer_rfm_score.sql - RFM segmentation for churn prediction
-
 07_customer_next_order_prediction.sql - Expected order date calculation
-
 08_product_cross_sell_pairs.sql - Market basket analysis
-
 05_product_demand_trend_flag.sql - Growth classification (3-month window)
-
 01_company_monthly_timeseries.sql - Company-level KPIs by month
 
-[![EXPLORE PHASE 4 QUERIES](https://img.shields.io/badge/Explore_All_Phase_4_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/predictive/.sql)
+[![EXPLORE PHASE 4 QUERIES](https://img.shields.io/badge/Explore_All_Phase_4_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/predictive)
 
 Predictive Outputs:
 
@@ -228,12 +217,10 @@ This module is not about performance or KPIs. It focuses on relationships, hiera
 Sample Queries:
 
 01_employee_hierarchy_recursive.sql - Recursive CTE for reporting chains
-
 04_org_sales_coverage_map.sql - End-to-end coverage view
-
 03_office_region_structure.sql - Geographic footprint analysis
 
-[![EXPLORE PHASE 5 QUERIES](https://img.shields.io/badge/Explore_All_Phase_5_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/structural/.sql)
+[![EXPLORE PHASE 5 QUERIES](https://img.shields.io/badge/Explore_All_Phase_5_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/structural)
 
 Structural Insights:
 
