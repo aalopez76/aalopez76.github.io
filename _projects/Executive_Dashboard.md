@@ -2,39 +2,18 @@
 layout: page
 title: Executive dashboard
 description: strategic bridge between raw data processing and high-level decision-making.
-img: assets/img/sql.png
+img: assets/img/kpi-dashboard.png
 importance: 3
 category: Personal
 ---
 
 ### Project Summary
-This project analyzes the operational, commercial, and organizational performance of Toys & Models Co., a global distributor of collectible scale models.
 
-The analysis is performed entirely with SQL, following a professional multi-layer analytics framework.
+![Dashboard Preview](assets/img/kpi-dashboard.gif)
 
-The company operates across North America, Europe, and APAC, maintaining:
-- A global product catalog (cars, motorcycles, aircraft, ships)
-- A sales-rep–driven B2B commercial structure
-- Regionally distributed offices
-- A diverse customer base
-- Multi-stage order processing
-- Credit- and payment-dependent workflows.
+This dashboard provides comprehensive insights across five key areas: executive KPIs, regional performance, risk diagnostics, growth opportunities, and deep-dive analytics. The analysis reveals significant revenue concentration among top customers and products, geographic imbalances in sales distribution, and predictable demand patterns ideal for forecasting. Key findings include a 14% on-time delivery rate improvement year-over-year, credit misalignment risks affecting $250K+ in revenue, and cross-sell opportunities with lift metrics exceeding 10x for strategic product pairs.
 
-### Key Insights Delivered
-Through 50+ production-grade SQL queries organized in 5 analytical layers, this project uncovers:
 
-- Revenue Concentration
-- Risk Detection
-- Demand Patterns
-- Cross-Sell Opportunities
-- Churn Prediction
-- Geographic Imbalance
-- Operational Excellence
-
-Our goal is to extract the necessary data, starting with fundamental questions and then moving towards a deeper, more strategic analysis.
-
-### Data Structure & Schema
-The dataset contains detailed relational information on customers, products, orders, payments, offices, and employees.
 
 The database schema is: 
 
