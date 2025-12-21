@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SQL Queries
-description: from the fundamental to Advanced
+description: from the fundamental to advanced sql queries
 img: assets/img/sql.png
 importance: 2
 category: Personal
