@@ -14,7 +14,7 @@ End-to-end analytics product that transforms transactional sales data into **exe
 **Scope:** 326 orders across multiple years · 27 countries · 122 customers · 110 products · 23 sales representatives (NA, EU, APAC)
 
 <p align="center">
-  <img src="/assets/img/kpi-dashboard.gif" alt="Dashboard Preview" width="400">
+  <img src="/assets/img/kpi-dashboard.gif" alt="Dashboard Preview" width="900">
 </p>
 
 ---
