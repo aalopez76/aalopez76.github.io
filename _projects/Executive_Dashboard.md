@@ -9,7 +9,10 @@ category: Personal
 
 ### Project Summary
 
-![Dashboard Preview](/assets/img/kpi-dashboard.gif)
+<p align="center">
+  <img src="/assets/img/kpi-dashboard.gif" alt="Dashboard Preview" width="400">
+</p>
+
 
 
 
