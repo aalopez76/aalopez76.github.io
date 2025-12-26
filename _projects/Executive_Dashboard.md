@@ -10,7 +10,7 @@ category: Personal
 ### Project Summary
 
 <p align="center">
-  <img src="{{ '/assets/images/kpi-dashboard.png' | relative_url }}" alt="Dashboard Preview" width="400">
+  <img src="{{ '/assets/img/kpi-dashboard.png' | relative_url }}" alt="Dashboard Preview" width="400">
 </p>
 
 
