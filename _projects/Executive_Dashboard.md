@@ -10,7 +10,7 @@ category: Personal
 ### Project Summary
 
 <p align="center">
-  <img src="/assets/img/kpi-dashboard.gif" alt="Dashboard Preview" width="600">
+  <img src="/assets/img/kpi-dashboard.gif" alt="Dashboard Preview" width="900">
 </p>
 
 
@@ -25,7 +25,7 @@ The database schema is:
 
 <div class="row justify-content-center">
     <div class="col-md-12 mt-3 mt-md-0 text-center">
-        {% include figure.liquid loading="eager" path="assets/img/toys_and_models-db.png" title="example image" class="img-fluid rounded z-depth-1" style="max-width: 350%; width: 350%;" %}
+        {% include figure.liquid loading="eager" path="assets/img/toys_and_models-db.png" title="example image" class="img-fluid rounded z-depth-1" style="max-width: 750%; width: 750%;" %}
     </div>
 </div>
 <div class="caption text-center">
