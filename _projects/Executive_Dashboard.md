@@ -14,7 +14,7 @@ End-to-end analytics product that transforms transactional sales data into **exe
 **Scope:** 326 orders across multiple years · 27 countries · 122 customers · 110 products · 23 sales representatives (NA, EU, APAC)
 
 <p align="center">
-  <img src="/assets/img/kpi-dashboard.gif" alt="Dashboard Preview" width="900">
+  <img src="/assets/img/kpi-dashboard.gif" alt="Dashboard Preview" width="1300">
 </p>
 
 ---
@@ -68,16 +68,16 @@ Raw Tables (SQLite)          SQL Analytics Layer              Dashboard Layer
 ````
 
 ## Data Model & Dataset Quality
-<div class="row justify-content-center"> <div class="col-md-12 mt-3 mt-md-0 text-center"> {% include figure.liquid loading="eager" path="assets/img/toys_and_models-db.png" title="Database Schema" class="img-fluid rounded z-depth-1" style="max-width: 85%; height: auto;" %} </div> </div> <div class="caption text-center"> Database schema (Classic Models / Toys & Models Co.). </div>
+<div class="row justify-content-center"> <div class="col-md-12 mt-3 mt-md-0 text-center"> {% include figure.liquid loading="eager" path="assets/img/toys_and_models-db.png" title="Database Schema" class="img-fluid rounded z-depth-1" style="max-width: 125%; height: auto;" %} </div> </div> <div class="caption text-center"> Database schema (Classic Models / Toys & Models Co.). </div>
 
 ### Dataset Summary
 
--2,994 order details across 326 orders
--122 customers with credit profiles
--23 employees in 7 offices
--110 products across 7 product lines
--273 payments tracked
--27 countries served
+- 2,994 order details across 326 orders
+-  customers with credit profiles
+- 23 employees in 7 offices
+- 110 products across 7 product lines
+- 273 payments tracked
+- 27 countries served
 
 ### Data Quality Checks (nulls, duplicates, FK integrity, hierarchy integrity)
 
