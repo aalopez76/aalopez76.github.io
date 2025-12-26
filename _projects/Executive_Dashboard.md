@@ -53,14 +53,17 @@ Raw Tables (SQLite)          SQL Analytics Layer              Dashboard Layer
 ┌─────────────┐              ┌──────────────┐               ┌──────────────┐
 │ customers   │──┐           │ Descriptive  │──┐            │ Executive    │
 │ orders      │  │           │ (What?)      │  │            │ View         │
-│ orderdetails│  ├─────────▶ │ Analytical   │  ├──────────▶ │ Regional     │
-│ products    │  │           │ (Why?)       │  │            │ View         │
-│ employees   │  │           │ Diagnostic   │  │            │ Risks &      │
-│ payments    │  │           │ (What wrong?)│  │            │ Diagnostics  │
-│ offices     │  │           │ Predictive   │──┘            │ Opportunities│
-│ productlines│──┘           │ (What next?) │               │ Deep Dive    │
-└─────────────┘              └──────────────┘               └──────────────┘
-
+│ orderdetails│  ├─────────▶│              │  │            ├──────────────┤
+│ products    │  │           │ Analytical   │  │            │ Regional     │
+│ employees   │  │           │ (Why?)       │  ├──────────▶│ View         │
+│ payments    │  │           │              │  │            ├──────────────┤
+│ offices     │  │           │ Diagnostic   │  │            │ Risks &      │
+│ productlines│──┘           │ (What wrong?)│  │            │ Diagnostics  │
+└─────────────┘              │              │  │            ├──────────────┤
+                             │ Predictive   │  │            │ Opportunities│
+                             │ (What next?) │──┘            ├──────────────┤
+                             └──────────────┘               │ Deep Dive    │
+                                                            └──────────────┘
 ```
 ````
 
