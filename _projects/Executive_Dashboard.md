@@ -55,7 +55,8 @@ The SQL queries used for exploration, cleaning, analysis, and modeling are organ
 
 Each module contains production-grade SQL with documentation, window functions, CTEs, recursive queries, advanced aggregations, and business logic embedded directly in SQL.
 
-```text
+````markdown
+```typograms
 Raw Tables (SQLite)           SQL Analytics Layer
 ─────────────────             ───────────────────
 ┌─────────────┐               ┌──────────────┐
@@ -72,6 +73,7 @@ Raw Tables (SQLite)           SQL Analytics Layer
                               │ (What next?) │
                               └──────────────┘
 ```
+````
                                                             
 
 ### Phase 1: Descriptive/Data Quality — "What is happening?"
