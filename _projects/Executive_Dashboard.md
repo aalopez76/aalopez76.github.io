@@ -3,7 +3,7 @@ layout: page
 title: Executive KPI Dashboard
 description: Strategic bridge between raw data processing and high-level decision-making.
 img: assets/img/kpi-dashboard.png
-importance: 3
+importance: 1
 category: Personal
 ---
 
