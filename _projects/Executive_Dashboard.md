@@ -9,7 +9,8 @@ category: Personal
 
 ### Project Summary
 
-![Dashboard Preview](assets/img/kpi-dashboard.gif)
+![Dashboard Preview](/assets/img/kpi-dashboard.gif)
+
 
 This dashboard provides comprehensive insights across five key areas: executive KPIs, regional performance, risk diagnostics, growth opportunities, and deep-dive analytics. The analysis reveals significant revenue concentration among top customers and products, geographic imbalances in sales distribution, and predictable demand patterns ideal for forecasting. Key findings include a 14% on-time delivery rate improvement year-over-year, credit misalignment risks affecting $250K+ in revenue, and cross-sell opportunities with lift metrics exceeding 10x for strategic product pairs.
 
@@ -56,7 +57,7 @@ The SQL queries used for exploration, cleaning, analysis, and modeling are organ
 Each module contains production-grade SQL with documentation, window functions, CTEs, recursive queries, advanced aggregations, and business logic embedded directly in SQL.
 
 ````markdown
-```typograms
+```
 Raw Tables (SQLite)           SQL Analytics Layer
 ─────────────────             ───────────────────
 ┌─────────────┐               ┌──────────────┐
