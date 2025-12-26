@@ -9,7 +9,10 @@ category: Personal
 
 ### Project Summary
 
-![Dashboard Preview](/assets/img/kpi-dashboard.gif)
+<p align="center">
+  <img src="{{ '/assets/images/kpi-dashboard.png' | relative_url }}" alt="Dashboard Preview" width="400">
+</p>
+
 
 
 This dashboard provides comprehensive insights across five key areas: executive KPIs, regional performance, risk diagnostics, growth opportunities, and deep-dive analytics. The analysis reveals significant revenue concentration among top customers and products, geographic imbalances in sales distribution, and predictable demand patterns ideal for forecasting. Key findings include a 14% on-time delivery rate improvement year-over-year, credit misalignment risks affecting $250K+ in revenue, and cross-sell opportunities with lift metrics exceeding 10x for strategic product pairs.
