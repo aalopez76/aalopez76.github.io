@@ -17,6 +17,8 @@ End-to-end analytics product that transforms transactional sales data into **exe
   <img src="/assets/img/kpi-dashboard.gif" alt="Dashboard Preview" width="1300">
 </p>
 
+[![Hugging Face Space](https://img.shields.io/badge/HuggingFace-Live%20Dashboard-yellow?logo=huggingface)](https://huggingface.co/spaces/aalpzp/Executive_KPI_Dashboard)
+
 ---
 
 ## Business Problem
