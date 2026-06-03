@@ -1,7 +1,7 @@
 ---
 layout: page
-title: SQL Queries 
-description: End-to-end SQL analytics on a global collectibles distributor: from data quality to predictive business signals.
+title: SQL Queries - From Fundamental to Advanced
+description: 
 img: assets/img/sql.png
 importance: 2
 category: Personal
