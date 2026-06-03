@@ -185,7 +185,7 @@ Foundation analytics answering core business questions:
 * `05_sales_by_country.sql`
 * `07_order_size_unique_products.sql`
 
-[![EXPLORE PHASE 1 QUERIES](https://img.shields.io/badge/Explore_All_Phase_1_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/descriptive)
+[![EXPLORE PHASE 1 QUERIES](https://img.shields.io/badge/Explore_All_Phase_1_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/01.descriptive)
 
 ### Results 
 
@@ -213,7 +213,7 @@ Thresholds:
 * `03_credit_vs_sales_misalignment_ratio.sql`
 * `01_geographic_credit_anomalies.sql`
 
-[![EXPLORE PHASE 2 QUERIES](https://img.shields.io/badge/Explore_All_Phase_2_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/diagnostic)
+[![EXPLORE PHASE 2 QUERIES](https://img.shields.io/badge/Explore_All_Phase_2_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/02.diagnostic)
 
 ### Results 
 
@@ -243,7 +243,7 @@ Deep-dive analyses using window functions, trend analysis, and segmentation tech
 * `01_sales_by_country_vs_region.sql`
 * `04_salesrep_performance_deep_agg.sql`
 
-[![EXPLORE PHASE 3 QUERIES](https://img.shields.io/badge/Explore_All_Phase_3_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/analytical)
+[![EXPLORE PHASE 3 QUERIES](https://img.shields.io/badge/Explore_All_Phase_3_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/03.analytical)
 
 ### Insights 
 
@@ -288,7 +288,7 @@ Forward-looking indicators and forecasting features.
 * `05_product_demand_trend_flag.sql`
 * `01_company_monthly_timeseries.sql`
 
-[![EXPLORE PHASE 4 QUERIES](https://img.shields.io/badge/Explore_All_Phase_4_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/predictive)
+[![EXPLORE PHASE 4 QUERIES](https://img.shields.io/badge/Explore_All_Phase_4_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/04.predictive)
 
 ### Outputs 
 
@@ -329,7 +329,7 @@ Organizational hierarchy and territory coverage analysis.
 * `04_org_sales_coverage_map.sql`
 * `03_office_region_structure.sql`
 
-[![EXPLORE PHASE 5 QUERIES](https://img.shields.io/badge/Explore_All_Phase_5_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/structural)
+[![EXPLORE PHASE 5 QUERIES](https://img.shields.io/badge/Explore_All_Phase_5_Queries-343a40?style=for-the-badge&logo=github)](https://github.com/aalopez76/SQL-Queries/tree/main/queries/05.structural)
 
 ### Insights 
 
