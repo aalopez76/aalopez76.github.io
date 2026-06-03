@@ -1,13 +1,11 @@
 ---
 layout: page
 title: bash_analyzer
-description: Bash-based CLI tool for analyzing and auditing CSV and TSV datasets.
+description: A Bash-based command-line tool for analyzing, auditing, and transforming CSV and TSV datasets.
 img: assets/img/Shell.png
 importance: 3
 category: Personal
 ---
-
-A Bash-based command-line tool for analyzing, auditing, and transforming CSV and TSV datasets.
 
 In data operations, technical support, and system administration environments, the need to quickly inspect and understand CSV or TSV files is a common challenge. However, access to specialized analytics tools, graphical interfaces, or full Python/Pandas environments is not always available—particularly on remote servers, restricted workstations, or lightweight development environments.
 
