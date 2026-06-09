@@ -362,8 +362,11 @@ WITH CustomerRFM AS (
 )
 -- Recency/Frequency/Monetary bucketed with NTILE() and combined into an RFM score.
 Sample 2: Recursive organizational hierarchy (any employee → CEO)
+```
 
-sql
+**Recursive organizational hierarchy** *(reporting chain, any employee → CEO)*
+
+```sql
 WITH RECURSIVE EmployeeHierarchy AS (
     SELECT employeeNumber, reportsTo,
            firstName || ' ' || lastName AS employeeName, 1 AS level
@@ -377,11 +380,12 @@ WITH RECURSIVE EmployeeHierarchy AS (
 )
 SELECT * FROM EmployeeHierarchy;
 All 39 queries are available in the SQL‑Queries repository.
+```
 
-Engineering & Reliability
+## Engineering & Reliability
 What turns this analysis into a maintainable product – and demonstrates senior, full‑lifecycle ownership:
 
-Area	Implementation
+## Area	Implementation
 Data engine	Reads through my own multi‑engine SQL connector (SQL‑Connection‑Module) – dogfooding a reusable component instead of ad‑hoc sqlite3.
 Reproducibility	Pinned dependency lockfile · Python 3.12 · deterministic builds.
 Testing	Integration (data contract, query resolution, dashboard build) · unit (KPI math) · end‑to‑end browser tests (Playwright) · data‑regression snapshots that catch silent metric drift.
@@ -393,7 +397,7 @@ Tech stack:
 SQL (SQLite) · Python 3.12 · pandas · Vizro / Dash / Plotly · gunicorn · Docker ·
 GitHub Actions · Playwright · pytest · ruff · Hugging Face Spaces.
 
-Recommendations Derived from the Analysis
+## Recommendations Derived from the Analysis
 Based on the findings, the dashboard directly supports five strategic actions:
 
 Diversify the customer & geographic base – target under‑represented countries to reduce the ~55% top‑3 concentration.
