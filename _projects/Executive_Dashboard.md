@@ -7,9 +7,6 @@ importance: 1
 category: Personal
 ---
 
-# Executive KPI Dashboard  
-### Turning raw sales data into strategic decisions
-
 [![Live demo](https://img.shields.io/badge/Live-Hugging%20Face%20Space-yellow?logo=huggingface)](https://huggingface.co/spaces/aalpzp/Executive_KPI_Dashboard)
 [![Dashboard repo](https://img.shields.io/badge/Code-Executive__Dashboard-181717?logo=github)](https://github.com/aalopez76/Executive_Dashboard)
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
