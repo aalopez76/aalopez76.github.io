@@ -16,11 +16,17 @@ next*. I built an end-to-end analytics product that closes that gap: a five-laye
 interactive dashboard that lets executives, sales managers, and commercial teams **see performance,
 catch risk early, and act on opportunities** — without waiting on manual reporting cycles.
 
+<p align="center">
+  <img src="/assets/img/kpi-dashboard.gif" alt="Dashboard Preview" width="1300">
+</p>
+
+[![Hugging Face Space](https://img.shields.io/badge/HuggingFace-Live%20Dashboard-yellow?logo=huggingface)](https://aalpzp-executive-kpi-dashboard.hf.space/deep-dive)
+
 The work spans the full stack of a modern data product: **production SQL**, a **reusable data connector**,
 **automated testing & CI**, and a **reproducible cloud deployment** — engineered so the numbers can be
 trusted and the product can be maintained.
 
-### Key metrics at a glance *(all verified against the database)*
+### Key metrics at a glance **(all verified against the database)**
 
 | Metric | Value | Note |
 |---|---:|---|
@@ -75,7 +81,7 @@ Raw Tables (SQLite)          SQL Analytics Layer              Dashboard Layer
 ```
 
 <p align="center">
-  <img src="assets/images/toys_and_models-db.png" alt="Database schema (Classic Models / Toys & Models Co.)" width="640">
+  <img src="assets/img/toys_and_models-db.png" alt="Database schema (Classic Models / Toys & Models Co.)" width="640">
   <br><em>Relational schema — the single source of truth behind every metric.</em>
 </p>
 
