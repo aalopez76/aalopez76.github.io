@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Executive KPI Dashboard
-description: Strategic bridge between raw data processing and high-level decision-making.
+description: Turning transactional data into board-ready decisions.
 img: assets/img/kpi-dashboard.png
 importance: 1
 category: Personal
@@ -143,9 +143,12 @@ Connection Module: **[SQL-Connection-Module](https://github.com/aalopez76/SQL-Co
 > automated tests, and CI/CD.
 
 <p align="center">
-  <img src="assets/images/kpi-dashboard.png" alt="Executive KPI Dashboard — Executive View" width="720">
-  <br><em>Executive view: real-time KPIs with year-over-year deltas, risk flags, and drill-downs.</em>
+  <img src="/assets/img/kpi-dashboard.gif" alt="Dashboard Preview" width="1300">
 </p>
+
+[![Hugging Face Space](https://img.shields.io/badge/HuggingFace-Live%20Dashboard-yellow?logo=huggingface)](https://aalpzp-executive-kpi-dashboard.hf.space/deep-dive)
+
+
 
 ---
 
@@ -320,11 +323,11 @@ GitHub Actions · Playwright · pytest · ruff · Hugging Face Spaces.
 
 ## Links
 
-- 🚀 **Live dashboard** — [Hugging Face Space](https://huggingface.co/spaces/aalpzp/Executive_KPI_Dashboard)
-- 📊 **Dashboard** — [Executive_Dashboard](https://github.com/aalopez76/Executive_Dashboard)
-- 🧮 **SQL analytics layer** — [SQL-Queries](https://github.com/aalopez76/SQL-Queries)
-- 🔌 **Connection module** — [SQL-Connection-Module](https://github.com/aalopez76/SQL-Connection-Module)
+- **Live dashboard** — [Hugging Face Space](https://huggingface.co/spaces/aalpzp/Executive_KPI_Dashboard)
+- **Dashboard** — [Executive_Dashboard](https://github.com/aalopez76/Executive_Dashboard)
+- **SQL analytics layer** — [SQL-Queries](https://github.com/aalopez76/SQL-Queries)
+- **Connection module** — [SQL-Connection-Module](https://github.com/aalopez76/SQL-Connection-Module)
 
-<sub>Figures verified against the database on 2026-06-04. QA assisted by AI tooling.</sub>
+
 
 
