@@ -254,22 +254,23 @@ The target users are **C‑level executives, sales managers, and commercial anal
 
 A three‑layer data product architecture, from raw tables to decisions:
 Raw Tables (SQLite) SQL Analytics Layer Dashboard Layer
-───────────────── ─────────────────── ───────────────
-┌─────────────┐ ┌──────────────┐ ┌──────────────┐
-│ customers │──┐ │ Descriptive │──┐ │ Executive │
-│ orders │ │ │ (What?) │ │ │ View │
-│ orderdetails│ ├─────────▶│ │ │ ├──────────────┤
-│ products │ │ │ Analytical │ │ │ Regional │
-│ employees │ │ │ (Why?) │ ├──────────▶│ View │
-│ payments │ │ │ │ │ ├──────────────┤
-│ offices │ │ │ Diagnostic │ │ │ Risks & │
-│ productlines│──┘ │ (What wrong?)│ │ │ Diagnostics │
-└─────────────┘ │ Predictive │ │ ├──────────────┤
-│ (What next?) │──┘ │ Opportunities│
-└──────────────┘ │ Deep Dive │
-└──────────────┘
-
-text
+```
+Raw Tables (SQLite)          SQL Analytics Layer              Dashboard Layer
+─────────────────            ───────────────────              ───────────────
+┌─────────────┐              ┌──────────────┐               ┌──────────────┐
+│ customers   │──┐           │ Descriptive  │──┐            │ Executive    │
+│ orders      │  │           │ (What?)      │  │            │ View         │
+│ orderdetails│  ├─────────▶│              │  │            ├──────────────┤
+│ products    │  │           │ Analytical   │  │            │ Regional     │
+│ employees   │  │           │ (Why?)       │  ├──────────▶│ View         │
+│ payments    │  │           │              │  │            ├──────────────┤
+│ offices     │  │           │ Diagnostic   │  │            │ Risks &      │
+│ productlines│──┘           │ (What wrong?)│  │            │ Diagnostics  │
+└─────────────┘              │ Predictive   │  │            ├──────────────┤
+                             │ (What next?) │──┘            │ Opportunities│
+                             └──────────────┘               │ Deep Dive    │
+                                                            └──────────────┘
+```
 
 <p align="center">
   <img src="/assets/img/toys_and_models-db.png" alt="Database schema" width="700">
