@@ -83,7 +83,7 @@ Raw Tables (SQLite)          SQL Analytics Layer              Dashboard Layer
 ```
 
 <p align="center">
-  <img src="/assets/img/toys_and_models-db.png" alt="Database schema" width="700">
+  <img src="/assets/img/toys_and_models-db.png" alt="Database schema" width="1000">
   <br><em>Relational schema – the single source of truth behind every metric.</em>
 </p>
 
