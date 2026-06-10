@@ -16,7 +16,7 @@ category: Personal
 > It consolidates sales performance, operational risk, and growth opportunities into a single executive view, backed by a production SQL layer, automated tests, and CI/CD.
 
 <p align="center">
-  <img src="/assets/img/kpi-dashboard.gif" alt="Dashboard Preview" width="1000">
+  <img src="/assets/img/kpi-dashboard.gif" alt="Dashboard Preview" width="1300">
   <br><em>Interactive dashboard: executive KPIs, regional drill‑downs, risk flags, and opportunity mining.</em>
 </p>
 
