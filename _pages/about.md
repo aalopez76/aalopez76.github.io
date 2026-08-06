@@ -32,14 +32,14 @@ social: false # includes social icons at the bottom of the page
 
 **If there's one thing I trust... it's data!**
 
-I hold a Master's degree in Data Science and am currently pursuing a senior-level certification.
+I hold a Master's degree in Data Science and am certified as a Senior Data Scientist by Tecnológico de Monterrey (ITESM), with expertise in data science, machine learning, and analytics.
 
-In a non-deterministic world, my curiosity has led me to explore the hidden insights within data. With a strong foundation in mathematics and analytical thinking, I've found in data science the methodologies needed to drive strategic decisions.
+In an increasingly complex world, my curiosity has led me to uncover the insights hidden within data. With a strong foundation in mathematics and analytical thinking, I've found in data science the tools and methods needed to drive strategic decision-making.
 
-**The answer lies in the data - it's just a matter of asking the right question.**
+**The answer lies in the data—it's just a matter of asking the right question.**
 
-With cutting-edge tools, advanced models, and the support of **artificial intelligence**, it's possible to deliver strategic insights that are both grounded and effective. My professional background has provided me with a deep understanding of how complex theoretical frameworks can be applied to solve demanding challenges with the precision and clarity that only experience can provide.
+With cutting-edge tools, advanced models, and solutions powered by **artificial intelligence**, it is possible to deliver strategic insights that are both reliable and actionable. My professional background has provided me with a deep understanding of how complex theoretical frameworks can be applied to solve demanding challenges with precision, clarity, and practical impact.
 
-My interests range from rigorously, yet accessibly, explaining classic machine learning algorithms to exploring the latest advances in deep learning. My focus is on applying advanced analytics to deliver practical and professional solutions.
+Beyond model development, I enjoy designing complete data solutions—from data engineering and governance to machine learning, deployment, and decision support. My interests range from explaining classical machine learning algorithms in a rigorous yet accessible way to exploring the latest advances in deep learning.
 
 **Data holds hidden potential!**
